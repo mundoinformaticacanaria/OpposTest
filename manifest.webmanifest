@@ -1,0 +1,23 @@
+{
+  "name": "OpposTest",
+  "short_name": "OpposTest",
+  "description": "Test de oposiciones, preguntas falladas y favoritas.",
+  "lang": "es",
+  "start_url": "./#/",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3f6f8",
+  "theme_color": "#17324d",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

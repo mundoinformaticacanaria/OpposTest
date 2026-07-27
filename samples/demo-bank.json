@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "bank": {
+    "id": "demo-oppostest",
+    "name": "Demostración de OpposTest",
+    "generated_at": "2026-07-27",
+    "description": "Contenido ficticio para probar la aplicación. No utilizar para estudiar."
+  },
+  "topics": [
+    { "id": "demo", "name": "Demostración", "parent_id": null },
+    { "id": "demo-web", "name": "Tecnología web", "parent_id": "demo" },
+    { "id": "demo-datos", "name": "Datos", "parent_id": "demo" }
+  ],
+  "questions": [
+    {
+      "id": "demo-001",
+      "statement": "¿Qué formato utiliza OpposTest para importar bancos de preguntas?",
+      "options": [
+        { "id": "A", "text": "JSON" },
+        { "id": "B", "text": "SQL ejecutable" },
+        { "id": "C", "text": "PDF sin procesar" },
+        { "id": "D", "text": "Una imagen PNG" }
+      ],
+      "correct_option_id": "A",
+      "topic_ids": ["demo", "demo-datos"],
+      "explanation": "El formato de intercambio del MVP es JSON versionado.",
+      "is_annulled": false
+    },
+    {
+      "id": "demo-002",
+      "statement": "¿Dónde conserva el MVP de OpposTest el progreso de estudio?",
+      "options": [
+        { "id": "A", "text": "En un servidor obligatorio" },
+        { "id": "B", "text": "En IndexedDB dentro del navegador" },
+        { "id": "C", "text": "En el PDF original" }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": ["demo", "demo-web", "demo-datos"],
+      "explanation": "El enfoque local-first evita un backend en el MVP.",
+      "is_annulled": false
+    },
+    {
+      "id": "demo-003",
+      "statement": "¿Qué ocurre cuando se falla una pregunta?",
+      "options": [
+        { "id": "A", "text": "Se elimina del banco" },
+        { "id": "B", "text": "Se marca como pendiente de repaso" },
+        { "id": "C", "text": "Se modifica su respuesta correcta" },
+        { "id": "D", "text": "Se publica en Internet" }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": ["demo"],
+      "explanation": "Las preguntas falladas alimentan el modo de repaso.",
+      "is_annulled": false
+    },
+    {
+      "id": "demo-004",
+      "statement": "¿Qué función queda fuera del MVP?",
+      "options": [
+        { "id": "A", "text": "Test por temas" },
+        { "id": "B", "text": "Preguntas favoritas" },
+        { "id": "C", "text": "Lectura automática de PDF" },
+        { "id": "D", "text": "Copia de seguridad" }
+      ],
+      "correct_option_id": "C",
+      "topic_ids": ["demo", "demo-web"],
+      "explanation": "Los PDF se convertirán externamente a JSON.",
+      "is_annulled": false
+    }
+  ]
+}
