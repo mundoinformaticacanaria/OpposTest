@@ -31,6 +31,43 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Verify source fragments
+        run: |
+          python - <<'PY'
+          from hashlib import sha256
+          from pathlib import Path
+
+          expected = [
+              (12000, 'dd4345171d9371c61d466aa739239563d346109f14cbc70f0ed7b313a3464dba'),
+              (12000, '668081a281c09dce666527a3cce8a9ebf21512412d0b0705d84b43ebecf7005e'),
+              (12000, 'f687939d68d897f07e401688bb3c4ef76848b450641dd6db5748d22131794108'),
+              (12000, '61d5c8e0fef9e999c6de0347042be2da13bb533474b64b4549eafbd16ccdd179'),
+              (12000, 'a31d1d3c327e19919c5361d4a0d4e2ad8c3b51c1acd7f5c89b782732c6932067'),
+              (12000, '8ff6cb9500f0d6b364c9f2cbd787fbee637803584086d59e16c40ddae37b6dde'),
+              (12000, '15c3bf21d655eff3bb7ebdc27c0aadecdf2d60b20d43262d665e19a6e9dd6104'),
+              (12000, '70e2068ab94a431b054dcf0d011e131236772d2d27a7c189cdebae66a6eef8db'),
+              (12000, '079ed9ac7bf6b34c7ceec0259afd33acd398c099848c615ffd4b297efa1a5f94'),
+              (12000, '1c4e090f6a9199514486f10955947be7dad8ce96ec99ec47301b3b94bda7dbe1'),
+              (12000, '36a1a381a9b3acd010e96e5ec80f0cc9b39783dc30ddd02adbd11156a15723f4'),
+              (12000, '6c4cb86eb6db17236f0710eb13e997a5cde5df28c4368ddd5f5d989498dc2658'),
+              (12000, 'c0089535d1d7587baf5f1aec73a34fa20750ac75c16cc0b140b676f973fcb816'),
+              (9964, 'ae6c7c9a21912a9b0495f0744b5531e21626377c7afeb3baa9aa67f59f986d51'),
+          ]
+
+          errors = []
+          for number, (expected_length, expected_hash) in enumerate(expected):
+              path = Path(f'.bank-source-v3/chunk-{number:02d}')
+              data = path.read_bytes() if path.exists() else b''
+              actual_hash = sha256(data).hexdigest()
+              status = 'OK' if len(data) == expected_length and actual_hash == expected_hash else 'ERROR'
+              print(f'{path}: {status}; length={len(data)}/{expected_length}; sha256={actual_hash}')
+              if status == 'ERROR':
+                  errors.append(path.name)
+
+          if errors:
+              raise SystemExit(f'Fragmentos incorrectos: {", ".join(errors)}')
+          PY
+
       - name: Reconstruct and validate public banks
         run: |
           set -euo pipefail
