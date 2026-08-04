@@ -16,18 +16,15 @@ jobs:
       - name: Hash fragments
         shell: bash
         run: |
-          if [ -f .bank-staging/part-sha256.txt ]; then
-            exit 0
-          fi
-          sha256sum .bank-staging/part-* | sort -k2 > .bank-staging/part-sha256.txt
+          sha256sum .bank-staging/part-[0-9][0-9] | sort -k2 > .bank-staging/part-sha256.txt
       - name: Commit hashes
         shell: bash
         run: |
-          if git diff --quiet -- .bank-staging/part-sha256.txt && git ls-files --error-unmatch .bank-staging/part-sha256.txt >/dev/null 2>&1; then
+          if git diff --quiet -- .bank-staging/part-sha256.txt; then
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .bank-staging/part-sha256.txt
-          git commit -m "Registrar huellas de fragmentos temporales"
+          git commit -m "Actualizar huellas de fragmentos temporales"
           git push
