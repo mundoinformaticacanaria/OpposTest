@@ -1,0 +1,35 @@
+name: Inspect bank tar
+
+on:
+  push:
+    branches:
+      - feat/10-bancos-publicos-autoria
+
+permissions:
+  contents: write
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: List tar metadata before the first gap
+        shell: bash
+        run: |
+          if [ -f .bank-staging/tar-listing.txt ]; then
+            exit 0
+          fi
+          cat .bank-staging/part-0{0,1,2,3,4,5} | base64 --decode > /tmp/banks-prefix.tar.gz
+          gzip -dc /tmp/banks-prefix.tar.gz > /tmp/banks-prefix.tar || true
+          tar --list --verbose --numeric-owner --full-time --file=/tmp/banks-prefix.tar > .bank-staging/tar-listing.txt || true
+      - name: Commit listing
+        shell: bash
+        run: |
+          if git diff --quiet -- .bank-staging/tar-listing.txt && git ls-files --error-unmatch .bank-staging/tar-listing.txt >/dev/null 2>&1; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .bank-staging/tar-listing.txt
+          git commit -m "Registrar metadatos del contenedor temporal"
+          git push
