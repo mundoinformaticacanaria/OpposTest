@@ -1,0 +1,38 @@
+name: Extract bank prefix
+
+on:
+  push:
+    branches:
+      - feat/10-bancos-publicos-autoria
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract complete files before the first gap
+        shell: bash
+        run: |
+          if [ -d .bank-staging/extracted ]; then
+            echo "Prefix already extracted."
+            exit 0
+          fi
+          mkdir -p .bank-staging/extracted
+          cat .bank-staging/part-0{0,1,2,3,4,5} | base64 --decode > /tmp/banks-prefix.tar.gz
+          gzip -dc /tmp/banks-prefix.tar.gz > /tmp/banks-prefix.tar || true
+          tar -xvf /tmp/banks-prefix.tar -C .bank-staging/extracted || true
+          find .bank-staging/extracted -type f -printf '%P %s bytes\n' | sort > .bank-staging/extracted/manifest.txt
+      - name: Commit extracted prefix
+        shell: bash
+        run: |
+          if git diff --quiet -- .bank-staging/extracted && git ls-files --error-unmatch .bank-staging/extracted/manifest.txt >/dev/null 2>&1; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .bank-staging/extracted
+          git commit -m "Extraer prefijo completo del banco temporal"
+          git push
