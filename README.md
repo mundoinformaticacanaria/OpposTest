@@ -11,11 +11,12 @@ Ofrecer una herramienta práctica, funcional, sencilla y robusta para:
 - repetir preguntas falladas;
 - practicar preguntas favoritas;
 - conservar historial y progreso en el dispositivo;
-- exportar y restaurar todos los datos.
+- exportar un banco compartible sin datos personales de estudio;
+- exportar y restaurar una copia completa del dispositivo.
 
 ## Estado
 
-Versión inicial `v0.1.0`. Incluye un prototipo funcional con almacenamiento IndexedDB, importación JSON, generación de test, corrección, falladas, favoritas, historial y copia de seguridad.
+Versión inicial `v0.1.0`. Incluye un prototipo funcional con almacenamiento IndexedDB, importación JSON, generación de test, corrección, falladas, favoritas, historial, banco compartible y copia de seguridad completa.
 
 ## Ejecutar localmente
 
@@ -44,7 +45,8 @@ npm test
 - Los datos se guardan en IndexedDB dentro del navegador.
 - No se envía información a ningún servidor.
 - Cada dispositivo mantiene sus propios datos.
-- La copia de seguridad permite trasladar banco, historial y progreso entre dispositivos.
+- **Exportar banco compartible** genera un JSON importable con metadatos del banco, temas y preguntas. No incluye historial, progreso, falladas, favoritas ni configuración.
+- **Exportar copia completa** incluye banco, historial, progreso y preferencias. Debe tratarse como una copia privada y permite trasladar todo el estudio entre dispositivos.
 
 ## Estructura
 
