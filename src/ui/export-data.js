@@ -1,14 +1,43 @@
 import { buildShareableBank, shareableBankFilename } from '../core/export-bank.js';
 import { loadStudyData } from '../data/repository.js';
 
-const main = document.querySelector('#main');
+const main = typeof document !== 'undefined' ? document.querySelector('#main') : null;
 let toastTimer;
 
-if (main) {
+if (main && typeof MutationObserver !== 'undefined') {
   const observer = new MutationObserver(enhanceDataScreen);
   observer.observe(main, { childList: true, subtree: true });
   window.addEventListener('hashchange', () => queueMicrotask(enhanceDataScreen));
   enhanceDataScreen();
+}
+
+export function exportDialogMarkup() {
+  return `
+    <dialog class="data-dialog" id="export-data-dialog" aria-labelledby="export-data-title">
+      <div class="dialog-shell">
+        <header class="dialog-header">
+          <div>
+            <h2 id="export-data-title">Copia de datos</h2>
+            <p>Elige qué tipo de archivo necesitas descargar.</p>
+          </div>
+          <button class="dialog-close" id="close-export-dialog" type="button" aria-label="Cerrar">×</button>
+        </header>
+        <div class="export-choice-grid">
+          <section class="export-choice">
+            <span class="badge">Privada</span>
+            <h3>Copia completa</h3>
+            <p>Incluye preguntas, temas, historial, progreso, falladas, favoritas y configuración.</p>
+            <div id="complete-export-slot"></div>
+          </section>
+          <section class="export-choice">
+            <span class="badge success">Compartible</span>
+            <h3>Banco de preguntas</h3>
+            <p>Incluye todas las preguntas y temas, sin historial, progreso ni configuración personal.</p>
+            <button class="button secondary export-choice-button" id="export-shareable-bank" type="button">Descargar banco de preguntas</button>
+          </section>
+        </div>
+      </div>
+    </dialog>`;
 }
 
 function enhanceDataScreen() {
@@ -16,30 +45,57 @@ function enhanceDataScreen() {
 
   const backupButton = main.querySelector('#export-backup');
   const backupCard = backupButton?.closest('.card');
-  if (!backupCard || main.querySelector('#export-shareable-bank')) return;
+  if (!backupCard || main.querySelector('#export-data-dialog')) return;
 
   const headerDescription = main.querySelector('.page-header p');
   if (headerDescription) {
-    headerDescription.textContent = 'Importa bancos JSON, comparte tus preguntas o conserva una copia completa de tu progreso.';
+    headerDescription.textContent = 'Importa bancos JSON y crea o restaura copias de tus datos.';
   }
 
   const backupTitle = backupCard.querySelector('h2');
   const backupDescription = backupCard.querySelector('p');
-  if (backupTitle) backupTitle.textContent = 'Copia completa';
-  if (backupDescription) backupDescription.textContent = 'Incluye preguntas, temas, historial, falladas, favoritas y configuración. Úsala como copia privada.';
-  backupButton.textContent = 'Exportar copia completa';
+  const backupActions = backupButton.parentElement;
+  const restoreLabel = backupCard.querySelector('label[for="restore-file"]');
 
-  const shareableCard = document.createElement('article');
-  shareableCard.className = 'card';
-  shareableCard.innerHTML = `
-    <h2>Banco compartible</h2>
-    <p>Exporta todas las preguntas y temas en un JSON importable, sin historial, progreso, falladas, favoritas ni configuración.</p>
-    <button class="button secondary" id="export-shareable-bank" type="button">Exportar banco compartible</button>`;
-  backupCard.before(shareableCard);
-  shareableCard.querySelector('#export-shareable-bank').addEventListener('click', exportShareableBankFile);
+  if (backupTitle) backupTitle.textContent = 'Copia de datos';
+  if (backupDescription) {
+    backupDescription.textContent = 'Descarga una copia completa privada o un banco de preguntas compartible.';
+  }
+  if (restoreLabel) restoreLabel.textContent = 'Restaurar copia';
+
+  const openButton = document.createElement('button');
+  openButton.className = 'button secondary';
+  openButton.id = 'open-export-dialog';
+  openButton.type = 'button';
+  openButton.textContent = 'Elegir copia';
+  backupActions.insertBefore(openButton, backupButton);
+
+  const wrapper = document.createElement('div');
+  wrapper.innerHTML = exportDialogMarkup().trim();
+  const dialog = wrapper.firstElementChild;
+  main.append(dialog);
+
+  backupButton.textContent = 'Descargar copia completa';
+  backupButton.classList.add('export-choice-button');
+  dialog.querySelector('#complete-export-slot').append(backupButton);
+
+  const closeButton = dialog.querySelector('#close-export-dialog');
+  const shareableButton = dialog.querySelector('#export-shareable-bank');
+
+  openButton.addEventListener('click', () => {
+    dialog.showModal();
+    queueMicrotask(() => backupButton.focus());
+  });
+  closeButton.addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', (event) => {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog.addEventListener('close', () => openButton.focus());
+  backupButton.addEventListener('click', () => queueMicrotask(() => dialog.close()));
+  shareableButton.addEventListener('click', (event) => exportShareableBankFile(event, dialog));
 }
 
-async function exportShareableBankFile(event) {
+async function exportShareableBankFile(event, dialog) {
   const button = event.currentTarget;
   button.disabled = true;
   button.setAttribute('aria-busy', 'true');
@@ -52,9 +108,10 @@ async function exportShareableBankFile(event) {
       now
     });
     downloadJson(shareableBankFilename(now), bank);
-    showToast(`Banco compartible preparado con ${bank.questions.length} preguntas.`);
+    dialog.close();
+    showToast(`Banco de preguntas preparado con ${bank.questions.length} preguntas.`);
   } catch (error) {
-    showToast(error.message || 'No se pudo preparar el banco compartible.');
+    showToast(error.message || 'No se pudo preparar el banco de preguntas.');
   } finally {
     button.disabled = false;
     button.removeAttribute('aria-busy');
