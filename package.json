@@ -7,7 +7,7 @@
   "scripts": {
     "test": "node --test",
     "serve": "node scripts/serve.mjs",
-    "check": "npm test && node scripts/check-static.mjs && node --check src/app.js && node --check src/data/db.js && node --check src/data/repository.js && node --check service-worker.js"
+    "check": "npm test && node scripts/check-static.mjs && node --check src/app.js && node --check src/core/export-bank.js && node --check src/data/db.js && node --check src/data/repository.js && node --check src/ui/export-data.js && node --check service-worker.js"
   },
   "engines": {
     "node": ">=20"
