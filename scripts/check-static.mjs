@@ -1,10 +1,18 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
+const publicBankFiles = [
+  'banks/gobcan-a1-ti-2026.json',
+  'banks/gobcan-a2-ti-2026.json',
+  'banks/scs-a1-informatica-estabilizacion-2022.json',
+  'banks/scs-a2-informatica-estabilizacion-2022.json'
+];
+
 const requiredFiles = [
   'index.html',
   'styles.css',
   'styles/export-dialog.css',
+  'styles/footer.css',
   'manifest.webmanifest',
   'service-worker.js',
   'src/app.js',
@@ -15,6 +23,8 @@ const requiredFiles = [
   'src/data/repository.js',
   'src/ui/export-data.js',
   'samples/demo-bank.json',
+  'banks/README.md',
+  ...publicBankFiles,
   'assets/icons/icon-192.png',
   'assets/icons/icon-512.png'
 ];
@@ -28,4 +38,5 @@ if (missing.length) {
 JSON.parse(readFileSync('manifest.webmanifest', 'utf8'));
 JSON.parse(readFileSync('samples/demo-bank.json', 'utf8'));
 JSON.parse(readFileSync('bank.schema.json', 'utf8'));
+publicBankFiles.forEach((file) => JSON.parse(readFileSync(file, 'utf8')));
 console.log('Estructura estática y archivos JSON válidos.');
