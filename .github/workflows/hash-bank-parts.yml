@@ -1,0 +1,33 @@
+name: Hash bank parts
+
+on:
+  push:
+    branches:
+      - feat/10-bancos-publicos-autoria
+
+permissions:
+  contents: write
+
+jobs:
+  hash:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Hash fragments
+        shell: bash
+        run: |
+          if [ -f .bank-staging/part-sha256.txt ]; then
+            exit 0
+          fi
+          sha256sum .bank-staging/part-* | sort -k2 > .bank-staging/part-sha256.txt
+      - name: Commit hashes
+        shell: bash
+        run: |
+          if git diff --quiet -- .bank-staging/part-sha256.txt && git ls-files --error-unmatch .bank-staging/part-sha256.txt >/dev/null 2>&1; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .bank-staging/part-sha256.txt
+          git commit -m "Registrar huellas de fragmentos temporales"
+          git push
