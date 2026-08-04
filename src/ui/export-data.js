@@ -1,6 +1,7 @@
 import { buildShareableBank, shareableBankFilename } from '../core/export-bank.js';
 import { loadStudyData } from '../data/repository.js';
 
+const PUBLIC_BANKS_URL = 'https://github.com/mundoinformaticacanaria/OpposTest/tree/main/banks';
 const main = typeof document !== 'undefined' ? document.querySelector('#main') : null;
 let toastTimer;
 
@@ -38,6 +39,7 @@ export function loadDialogMarkup() {
             <div class="data-file-slot" id="restore-file-slot"></div>
           </section>
         </div>
+        <p class="public-banks-note">¿Necesitas material? <a href="${PUBLIC_BANKS_URL}" target="_blank" rel="noopener noreferrer">Descarga bancos públicos desde GitHub</a>.</p>
       </div>
     </dialog>`;
 }
@@ -108,7 +110,8 @@ function enhanceDataScreen() {
   const loadActions = document.createElement('div');
   loadActions.className = 'hero-actions';
   const openLoadButton = createButton('open-load-dialog', 'Elegir archivo');
-  loadActions.append(openLoadButton);
+  const publicBanksLink = createExternalLink('Bancos públicos', PUBLIC_BANKS_URL);
+  loadActions.append(openLoadButton, publicBanksLink);
   bankCard.append(loadActions);
 
   const openExportButton = createButton('open-export-dialog', 'Elegir copia');
@@ -161,6 +164,16 @@ function createButton(id, text) {
   button.type = 'button';
   button.textContent = text;
   return button;
+}
+
+function createExternalLink(text, href) {
+  const link = document.createElement('a');
+  link.className = 'button ghost';
+  link.href = href;
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+  link.textContent = text;
+  return link;
 }
 
 function createDialog(markup) {
