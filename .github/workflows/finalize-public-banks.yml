@@ -1,0 +1,106 @@
+name: Finalize public banks
+
+on:
+  push:
+    branches:
+      - feat/10-bancos-publicos-autoria
+
+permissions:
+  contents: write
+
+concurrency:
+  group: finalize-public-banks
+  cancel-in-progress: false
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify and assemble archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from hashlib import sha256
+          from pathlib import Path
+
+          expected = {
+              0: '5d32cfc9a566e9e7929f22c1c39960a8e50eb6e3cf330257c253b8961792d860',
+              1: '809f999eddefc2c40d31461ce9f905bb839eabc5d768b16ca58966db25ac14ab',
+              2: '1a3dfcb7baea596c7b86648a280326e6481b7680f9eeeca38ace3279687162c1',
+              3: 'bd675e2f90288fd7f2086fa25d4c32c54399d772c0d2756e1039a1610a8f8537',
+              4: 'fe58c4be731ba679c93cadc889e82bb3583bcf4efdcbfd7d80b9454c364c869e',
+              5: 'c2d86ddfc489c870f3256d28061a5c30507d86134392c3858fb1274fc24c2d8e',
+              6: '52876b2389e53576f7f26bf89f4591f97e4cb6ea489b44df43b2a82ad2cfc26f',
+              7: 'd6e8cdeffb9d3841695a47713d90eed9e816adf8bcad5033f971509a5ddcbaba',
+              8: '7df85767ef808de5b01f5178e46598a217a54efc9f6609abafb27ac376b84e03',
+              9: '5a0845b095c7e3bf009b04de281b5edc22d95a93fe44639e8ba97537a4edb2b2',
+              10: 'f47a9b12562b6b699067506a5440b809d0f295195c5a5f40782b71b9d6d5e535',
+              11: '8bd6db488dfcb8f30ec0da489f367ef2000db44fc9ddbe6b020ebb0df75d6218',
+              12: '813f4ebf6281d0105ef381d8cfc037292193c7d0e58ca4ca190d6e0497a6b679',
+              13: '1196563ee1b77c50b5a24162adae769b4b2541a6442ec084e4757c6e4b049f7a',
+              14: 'fb4f826133c8b9bc6fece58945faf7b2cf669d8783b83c28a12e315b6e5984a7',
+              15: 'cabbe1394dc34c3dee84b8bd76f2d0b5f8075a4123a3f31da640db631fa57b37',
+              16: 'd1447d78cfded293b159e783b5c9a3388cfa5e90e28f570fbe04b34737dc0f07',
+          }
+
+          combined = []
+          for number, expected_hash in expected.items():
+              path = Path(f'.bank-staging/part-{number:02d}')
+              if not path.is_file():
+                  raise SystemExit(f'Falta {path}')
+              data = path.read_bytes()
+              actual = sha256(data).hexdigest()
+              if actual != expected_hash:
+                  raise SystemExit(f'Huella incorrecta en {path}: {actual}')
+              combined.append(data)
+
+          Path('/tmp/public-banks.b64').write_bytes(b''.join(combined))
+          PY
+
+          base64 --decode /tmp/public-banks.b64 > /tmp/public-banks.tar.gz
+          echo 'b0a951f7e91739a83272aee809fb7557054a3a941f85f265c902cc48e3d2aa27  /tmp/public-banks.tar.gz' | sha256sum --check --strict
+
+          expected_files="gobcan-a1-ti-2026.json
+gobcan-a2-ti-2026.json
+scs-a1-informatica-estabilizacion-2022.json
+scs-a2-informatica-estabilizacion-2022.json"
+          actual_files="$(tar -tzf /tmp/public-banks.tar.gz | sort)"
+          test "$actual_files" = "$expected_files"
+
+          mkdir -p banks
+          tar -xzf /tmp/public-banks.tar.gz -C banks
+
+      - name: Validate published banks and application
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run check
+
+      - name: Remove recovery artifacts
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf .bank-staging
+          rm -f \
+            .github/workflows/diagnose-bank-staging.yml \
+            .github/workflows/extract-bank-prefix.yml \
+            .github/workflows/inspect-bank-tar.yml \
+            .github/workflows/inspect-bank-bytes.yml \
+            .github/workflows/hash-bank-parts.yml \
+            .github/workflows/repair-bank-part02.yml \
+            .github/workflows/finalize-public-banks.yml
+
+      - name: Commit finalized public banks
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Publicar bancos de preguntas y limpiar recuperación"
+          git push origin HEAD:feat/10-bancos-publicos-autoria
