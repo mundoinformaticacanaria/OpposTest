@@ -1,0 +1,50 @@
+name: Build public banks v3
+
+on:
+  push:
+    branches:
+      - feat/10-bancos-publicos-autoria
+    paths:
+      - .bank-build-trigger-v3
+      - .bank-source-v3/**
+      - scripts/build-public-banks-v3.py
+      - tests/public-banks.test.mjs
+      - scripts/check-static.mjs
+      - .github/workflows/build-public-banks-v3.yml
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-validate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: feat/10-bancos-publicos-autoria
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Reconstruct public banks
+        run: python3 scripts/build-public-banks-v3.py
+
+      - name: Run full validation
+        run: npm run check
+
+      - name: Commit generated banks
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add banks/*.json
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+          else
+            git commit -m "Publicar cuatro bancos de preguntas"
+            git push origin HEAD:feat/10-bancos-publicos-autoria
+          fi
