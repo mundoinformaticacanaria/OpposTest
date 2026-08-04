@@ -1,0 +1,111 @@
+name: Publish public banks
+
+on:
+  push:
+    branches:
+      - feat/10-bancos-publicos-autoria
+    paths:
+      - .publish-public-banks-trigger
+      - .github/workflows/publish-public-banks.yml
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  publish:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout feature branch
+        uses: actions/checkout@v4
+        with:
+          ref: feat/10-bancos-publicos-autoria
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Reconstruct banks when temporary source is present
+        run: |
+          if [ -f scripts/build-public-banks-v3.py ]; then
+            python3 scripts/build-public-banks-v3.py
+          fi
+
+      - name: Validate application and public banks
+        run: npm run check
+
+      - name: Verify exact published set
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFileSync } from 'node:fs';
+          const expected = new Map([
+            ['banks/gobcan-a1-ti-2026.json', 86],
+            ['banks/gobcan-a2-ti-2026.json', 86],
+            ['banks/scs-a1-informatica-estabilizacion-2022.json', 600],
+            ['banks/scs-a2-informatica-estabilizacion-2022.json', 540]
+          ]);
+          let total = 0;
+          for (const [file, count] of expected) {
+            const payload = JSON.parse(readFileSync(file, 'utf8'));
+            if (payload.questions.length !== count) {
+              throw new Error(`${file}: ${payload.questions.length}; esperado: ${count}`);
+            }
+            total += count;
+          }
+          if (total !== 1312) throw new Error(`Total inesperado: ${total}`);
+          console.log(`Conjunto verificado: ${total} preguntas.`);
+          NODE
+
+      - name: Remove all temporary publication files
+        run: |
+          rm -rf .bank-staging .bank-source-v2 .bank-source-v3
+          rm -f .bank-build-trigger .bank-build-trigger-v3
+          rm -f .finalize-public-banks-trigger .publish-public-banks-trigger
+          rm -f scripts/build-public-banks.py scripts/build-public-banks-v3.py
+          rm -f .github/workflows/build-public-banks.yml
+          rm -f .github/workflows/build-public-banks-v3.yml
+          rm -f .github/workflows/finalize-public-banks.yml
+          rm -f .github/workflows/publish-public-banks.yml
+
+      - name: Commit clean final branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "Publicar bancos de preguntas y limpiar archivos temporales"
+            git push origin HEAD:feat/10-bancos-publicos-autoria
+          fi
+
+      - name: Open pull request
+        id: pr
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          PR_URL=$(gh pr list --head feat/10-bancos-publicos-autoria --base main --state open --json url --jq '.[0].url')
+          if [ -z "$PR_URL" ]; then
+            PR_URL=$(gh pr create \
+              --base main \
+              --head feat/10-bancos-publicos-autoria \
+              --title "Publicar bancos de preguntas y acreditar la autoría" \
+              --body $'## Resumen\n\n- Publica cuatro bancos JSON compatibles con OpposTest.\n- Reúne 1.312 preguntas: 86 A1 TI, 86 A2 TI, 600 SCS A1 y 540 SCS A2.\n- Añade un catálogo de descarga e instrucciones de importación.\n- Incorpora la atribución visible a Xerach Hernández Quesada y enlaces a LinkedIn, GitHub, código fuente y bancos públicos.\n- Añade validación automática y actualiza la caché de la PWA.\n\n## Validación\n\n- `npm run check` correcto.\n- Los cuatro bancos pasan el validador real de OpposTest.\n- 1.312 preguntas, sin datos personales de estudio.\n- Sin identificadores duplicados ni referencias a temas inexistentes.\n\nCloses #10')
+          fi
+          echo "url=$PR_URL" >> "$GITHUB_OUTPUT"
+
+      - name: Merge pull request with squash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_URL: ${{ steps.pr.outputs.url }}
+        run: |
+          for attempt in $(seq 1 18); do
+            if gh pr merge "$PR_URL" --squash --delete-branch; then
+              exit 0
+            fi
+            sleep 10
+          done
+          echo "No se pudo fusionar el PR tras varios intentos." >&2
+          exit 1
