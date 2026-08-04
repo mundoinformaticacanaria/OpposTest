@@ -7,10 +7,12 @@ const requiredFiles = [
   'manifest.webmanifest',
   'service-worker.js',
   'src/app.js',
+  'src/core/export-bank.js',
   'src/core/quiz-engine.js',
   'src/core/validate-bank.js',
   'src/data/db.js',
   'src/data/repository.js',
+  'src/ui/export-data.js',
   'samples/demo-bank.json',
   'assets/icons/icon-192.png',
   'assets/icons/icon-512.png'
