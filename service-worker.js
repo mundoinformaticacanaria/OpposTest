@@ -1,4 +1,4 @@
-const CACHE_NAME = 'oppostest-v0.1.0';
+const CACHE_NAME = 'oppostest-v0.1.0-r2';
 const APP_SHELL = [
   './',
   './index.html',
@@ -8,10 +8,12 @@ const APP_SHELL = [
   './assets/icons/icon-192.png',
   './assets/icons/icon-512.png',
   './src/app.js',
+  './src/core/export-bank.js',
   './src/core/quiz-engine.js',
   './src/core/validate-bank.js',
   './src/data/db.js',
   './src/data/repository.js',
+  './src/ui/export-data.js',
   './samples/demo-bank.json'
 ];
 
