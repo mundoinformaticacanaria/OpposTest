@@ -1,9 +1,10 @@
-const CACHE_NAME = 'oppostest-v0.1.0-r4';
+const CACHE_NAME = 'oppostest-v0.1.0-r5';
 const APP_SHELL = [
   './',
   './index.html',
   './styles.css',
   './styles/export-dialog.css',
+  './styles/footer.css',
   './manifest.webmanifest',
   './assets/icons/icon.svg',
   './assets/icons/icon-192.png',
