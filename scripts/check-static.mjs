@@ -4,6 +4,7 @@ import { resolve } from 'node:path';
 const requiredFiles = [
   'index.html',
   'styles.css',
+  'styles/export-dialog.css',
   'manifest.webmanifest',
   'service-worker.js',
   'src/app.js',
