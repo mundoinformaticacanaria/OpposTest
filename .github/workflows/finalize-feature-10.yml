@@ -1,0 +1,96 @@
+name: Finalize feature 10
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: finalize-feature-10
+  cancel-in-progress: false
+
+jobs:
+  finalize:
+    if: github.event.pull_request.head.ref == 'feat/10-bancos-publicos-autoria'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/10-bancos-publicos-autoria
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Reconstruct and validate public banks
+        run: |
+          set -euo pipefail
+          python scripts/build-public-banks-v3.py
+          npm run check
+
+      - name: Remove recovery-only artifacts
+        run: |
+          set -euo pipefail
+          rm -rf .bank-staging .bank-source-v2 .bank-source-v3
+          rm -f .bank-build-trigger .cleanup-bank-build-trigger
+          rm -f banks/build-report.json
+          rm -f scripts/build-public-banks.py scripts/build-public-banks-v3.py
+          rm -f \
+            .github/workflows/diagnose-bank-staging.yml \
+            .github/workflows/extract-bank-prefix.yml \
+            .github/workflows/inspect-bank-tar.yml \
+            .github/workflows/inspect-bank-bytes.yml \
+            .github/workflows/hash-bank-parts.yml \
+            .github/workflows/repair-bank-part02.yml \
+            .github/workflows/finalize-public-banks.yml \
+            .github/workflows/build-public-banks.yml \
+            .github/workflows/finalize-feature-10.yml
+
+          cat > .github/workflows/ci.yml <<'YAML'
+          name: CI
+
+          on:
+            push:
+              branches:
+                - main
+            pull_request:
+              branches:
+                - main
+
+          permissions:
+            contents: read
+
+          jobs:
+            test:
+              runs-on: ubuntu-latest
+              steps:
+                - uses: actions/checkout@v4
+                - uses: actions/setup-node@v4
+                  with:
+                    node-version: '20'
+                - run: npm run check
+          YAML
+
+          npm run check
+
+      - name: Commit finalized feature
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Publicar bancos validados y limpiar artefactos temporales"
+          git push origin HEAD:feat/10-bancos-publicos-autoria
