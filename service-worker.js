@@ -1,4 +1,4 @@
-const CACHE_NAME = 'oppostest-v0.1.0-r3';
+const CACHE_NAME = 'oppostest-v0.1.0-r4';
 const APP_SHELL = [
   './',
   './index.html',

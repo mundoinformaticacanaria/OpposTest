@@ -45,8 +45,10 @@ npm test
 - Los datos se guardan en IndexedDB dentro del navegador.
 - No se envía información a ningún servidor.
 - Cada dispositivo mantiene sus propios datos.
-- **Exportar banco compartible** genera un JSON importable con metadatos del banco, temas y preguntas. No incluye historial, progreso, falladas, favoritas ni configuración.
-- **Exportar copia completa** incluye banco, historial, progreso y preferencias. Debe tratarse como una copia privada y permite trasladar todo el estudio entre dispositivos.
+- **Descargar banco de preguntas** genera un JSON importable con metadatos del banco, temas y preguntas. No incluye historial, progreso, falladas, favoritas ni configuración.
+- Ese archivo se carga mediante **Carga de datos → Importar banco de preguntas** y se añade al contenido existente.
+- **Descargar copia completa** incluye banco, historial, progreso y preferencias. Debe tratarse como una copia privada.
+- Ese archivo se carga mediante **Carga de datos → Restaurar copia completa** y sustituye los datos actuales después de pedir confirmación.
 
 ## Estructura
 
