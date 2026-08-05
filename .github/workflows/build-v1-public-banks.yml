@@ -1,0 +1,55 @@
+name: Build v1 public banks
+
+on:
+  push:
+    branches:
+      - release/v1.0.0-mvp
+    paths:
+      - .build-v1-public-banks
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout release branch
+        uses: actions/checkout@v4
+        with:
+          ref: release/v1.0.0-mvp
+          fetch-depth: 0
+
+      - name: Recover verified source from the discarded draft branch
+        run: |
+          git fetch origin feat/10-bancos-publicos-autoria --depth=1
+          mkdir -p /tmp/oppostest-bank-source
+          for index in $(seq -w 0 13); do
+            git show FETCH_HEAD:.bank-source-v3/chunk-$index > /tmp/oppostest-bank-source/chunk-$index
+          done
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate four public banks
+        run: python3 scripts/build-public-banks-v1.py /tmp/oppostest-bank-source
+
+      - name: Validate MVP
+        run: npm run check
+
+      - name: Remove one-use build files
+        run: |
+          rm -f .build-v1-public-banks
+          rm -f scripts/build-public-banks-v1.py
+          rm -f .github/workflows/build-v1-public-banks.yml
+
+      - name: Commit public banks
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Publicar bancos de preguntas de OpposTest v1.0.0"
+          git push origin HEAD:release/v1.0.0-mvp
