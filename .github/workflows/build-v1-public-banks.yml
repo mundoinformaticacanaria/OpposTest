@@ -6,7 +6,7 @@ on:
       - release/v1.0.0-mvp
     paths:
       - .build-v1-public-banks
-      - .bank-source-fixes/fixes.tar.gz
+      - .bank-source-fixes/archive-part-*
       - .github/workflows/build-v1-public-banks.yml
   pull_request:
     branches:
@@ -28,13 +28,25 @@ jobs:
 
       - name: Recover and repair verified source
         run: |
-          echo '851edcc0c1fa525df63c16fe4d5e9213523c19c4f8f9580325622451ab6e7a0a  .bank-source-fixes/fixes.tar.gz' | sha256sum --check
+          cat > /tmp/archive-parts.sha256 <<'EOF'
+          9548832a095af64f1f75f0b9ef4f93a41e9bff2995352463dcc56204432bfbe3  .bank-source-fixes/archive-part-00
+          389e47d04afe3ea9866752896ad926a951e02c9e92208385ed7b54f8e8c3f8d5  .bank-source-fixes/archive-part-01
+          fc9f7bdb6753625d2da4f6cd52f67d373213c0074bf5b3c6331616711eff03f4  .bank-source-fixes/archive-part-02
+          49e2408cbf8f02ad488ac686eec4ce868c06ede92a68797d7b0e64f4b5f99c0e  .bank-source-fixes/archive-part-03
+          013813f681c91e34d5b78bc624146280f3bb48af7fed712c78eecb62ff157cf7  .bank-source-fixes/archive-part-04
+          3569981dec0af3aa520fc2ca4a3d48f7a0f3ac76781a82c2da793ada50d657ef  .bank-source-fixes/archive-part-05
+          EOF
+          sha256sum --check /tmp/archive-parts.sha256
+          cat .bank-source-fixes/archive-part-* > /tmp/fixes.tar.gz
+          echo '851edcc0c1fa525df63c16fe4d5e9213523c19c4f8f9580325622451ab6e7a0a  /tmp/fixes.tar.gz' | sha256sum --check
+
           git fetch origin feat/10-bancos-publicos-autoria --depth=1
           mkdir -p /tmp/oppostest-bank-source
           for index in $(seq -w 0 13); do
             git show FETCH_HEAD:.bank-source-v3/chunk-$index > /tmp/oppostest-bank-source/chunk-$index
           done
-          tar -xzf .bank-source-fixes/fixes.tar.gz -C /tmp/oppostest-bank-source
+          tar -xzf /tmp/fixes.tar.gz -C /tmp/oppostest-bank-source
+
           python3 - <<'PY'
           from pathlib import Path
           import hashlib
@@ -54,7 +66,10 @@ jobs:
               'chunk-12': 'c0089535d1d7587baf5f1aec73a34fa20750ac75c16cc0b140b676f973fcb816',
               'chunk-13': 'ae6c7c9a21912a9b0495f0744b5531e21626377c7afeb3baa9aa67f59f986d51',
           }
-          for chunk in sorted(Path('/tmp/oppostest-bank-source').glob('chunk-*')):
+          chunks = sorted(Path('/tmp/oppostest-bank-source').glob('chunk-*'))
+          if [chunk.name for chunk in chunks] != list(expected):
+              raise SystemExit(f'Conjunto de fragmentos inesperado: {[chunk.name for chunk in chunks]}')
+          for chunk in chunks:
               content = chunk.read_text(encoding='utf-8').strip()
               digest = hashlib.sha256(content.encode()).hexdigest()
               print(chunk.name, len(content), digest)
