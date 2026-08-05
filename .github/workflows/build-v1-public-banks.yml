@@ -6,6 +6,8 @@ on:
       - release/v1.0.0-mvp
     paths:
       - .build-v1-public-banks
+      - .bank-source-fixes/fixes.tar.gz
+      - .github/workflows/build-v1-public-banks.yml
   pull_request:
     branches:
       - main
@@ -26,12 +28,13 @@ jobs:
 
       - name: Recover and repair verified source
         run: |
+          echo '851edcc0c1fa525df63c16fe4d5e9213523c19c4f8f9580325622451ab6e7a0a  .bank-source-fixes/fixes.tar.gz' | sha256sum --check
           git fetch origin feat/10-bancos-publicos-autoria --depth=1
           mkdir -p /tmp/oppostest-bank-source
           for index in $(seq -w 0 13); do
             git show FETCH_HEAD:.bank-source-v3/chunk-$index > /tmp/oppostest-bank-source/chunk-$index
           done
-          cp .bank-source-fixes/chunk-* /tmp/oppostest-bank-source/
+          tar -xzf .bank-source-fixes/fixes.tar.gz -C /tmp/oppostest-bank-source
           python3 - <<'PY'
           from pathlib import Path
           import hashlib
