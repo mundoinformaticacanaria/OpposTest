@@ -6,6 +6,9 @@ on:
       - release/v1.0.0-mvp
     paths:
       - .build-v1-public-banks
+  pull_request:
+    branches:
+      - main
 
 permissions:
   contents: write
