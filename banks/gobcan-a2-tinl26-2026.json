@@ -1,0 +1,3886 @@
+{
+  "schema_version": 1,
+  "bank": {
+    "id": "gobcan-a2-tinl26-2026",
+    "name": "Gobierno de Canarias A2 TI (TINL26) — primer ejercicio 2026",
+    "generated_at": "2026-08-05T00:00:00.000Z",
+    "description": "Cuestionario oficial del primer ejercicio del Cuerpo Facultativo de Grado Medio, especialidad de Tecnologías de la Información (TINL26), con 80 preguntas ordinarias y 6 de reserva."
+  },
+  "topics": [
+    {
+      "id": "actos-administrativos",
+      "name": "Actos administrativos",
+      "parent_id": "procedimiento-y-jurisdiccion"
+    },
+    {
+      "id": "administracion-publica-digital",
+      "name": "Administración pública digital",
+      "parent_id": "temas-generales"
+    },
+    {
+      "id": "convocatorias",
+      "name": "Convocatorias y exámenes",
+      "parent_id": null
+    },
+    {
+      "id": "criptografia-identidad-y-firma",
+      "name": "Criptografía, identidad y firma",
+      "parent_id": "informatica"
+    },
+    {
+      "id": "estatuto-autonomia-canarias",
+      "name": "Estatuto de Autonomía de Canarias",
+      "parent_id": "legislacion"
+    },
+    {
+      "id": "funcion-publica-y-liderazgo",
+      "name": "Función pública y liderazgo",
+      "parent_id": "temas-generales"
+    },
+    {
+      "id": "gobcan-a2-tinl26",
+      "name": "Gobierno de Canarias A2 TI - Primer ejercicio 2026",
+      "parent_id": "convocatorias"
+    },
+    {
+      "id": "gobcan-a2-tinl26-ordinario",
+      "name": "GobCan A2 TI 2026 - Cuestionario ordinario",
+      "parent_id": "gobcan-a2-tinl26"
+    },
+    {
+      "id": "gobcan-a2-tinl26-reserva",
+      "name": "GobCan A2 TI 2026 - Preguntas de reserva",
+      "parent_id": "gobcan-a2-tinl26"
+    },
+    {
+      "id": "igualdad-y-empleo",
+      "name": "Igualdad y empleo",
+      "parent_id": "temas-generales"
+    },
+    {
+      "id": "informatica",
+      "name": "Informática",
+      "parent_id": null
+    },
+    {
+      "id": "instruccion-y-resolucion",
+      "name": "Instrucción y resolución",
+      "parent_id": "procedimiento-y-jurisdiccion"
+    },
+    {
+      "id": "interesados-y-representacion",
+      "name": "Interesados y representación",
+      "parent_id": "procedimiento-y-jurisdiccion"
+    },
+    {
+      "id": "legislacion",
+      "name": "Legislación",
+      "parent_id": null
+    },
+    {
+      "id": "ley-12-2014-transparencia-canarias",
+      "name": "Ley 12/2014 de Transparencia de Canarias",
+      "parent_id": "legislacion"
+    },
+    {
+      "id": "ley-33-2003-patrimonio",
+      "name": "Ley 33/2003 del Patrimonio de las Administraciones Públicas",
+      "parent_id": "legislacion"
+    },
+    {
+      "id": "ley-38-2003-subvenciones",
+      "name": "Ley 38/2003 General de Subvenciones",
+      "parent_id": "legislacion"
+    },
+    {
+      "id": "ley-39-2015",
+      "name": "Ley 39/2015",
+      "parent_id": "legislacion"
+    },
+    {
+      "id": "ley-40-2015",
+      "name": "Ley 40/2015",
+      "parent_id": "legislacion"
+    },
+    {
+      "id": "ley-53-1984-incompatibilidades",
+      "name": "Ley 53/1984 de Incompatibilidades",
+      "parent_id": "legislacion"
+    },
+    {
+      "id": "lo-3-2007-igualdad",
+      "name": "Ley Orgánica 3/2007 para la igualdad efectiva de mujeres y hombres",
+      "parent_id": "legislacion"
+    },
+    {
+      "id": "notificaciones-y-registro",
+      "name": "Notificaciones y registro",
+      "parent_id": "procedimiento-y-jurisdiccion"
+    },
+    {
+      "id": "organizacion-administrativa",
+      "name": "Organización administrativa",
+      "parent_id": "temas-generales"
+    },
+    {
+      "id": "patrimonio-publico",
+      "name": "Patrimonio público",
+      "parent_id": "temas-generales"
+    },
+    {
+      "id": "plazos-administrativos",
+      "name": "Plazos administrativos",
+      "parent_id": "procedimiento-y-jurisdiccion"
+    },
+    {
+      "id": "presupuestos-y-subvenciones",
+      "name": "Presupuestos y subvenciones",
+      "parent_id": "temas-generales"
+    },
+    {
+      "id": "procedimiento-y-jurisdiccion",
+      "name": "Procedimiento y jurisdicción",
+      "parent_id": "temas-generales"
+    },
+    {
+      "id": "proteccion-de-datos",
+      "name": "Protección de datos",
+      "parent_id": "informatica"
+    },
+    {
+      "id": "recursos-administrativos",
+      "name": "Recursos administrativos",
+      "parent_id": "procedimiento-y-jurisdiccion"
+    },
+    {
+      "id": "responsabilidad-patrimonial",
+      "name": "Responsabilidad patrimonial",
+      "parent_id": "temas-generales"
+    },
+    {
+      "id": "rgpd",
+      "name": "Reglamento General de Protección de Datos",
+      "parent_id": "legislacion"
+    },
+    {
+      "id": "silencio-administrativo",
+      "name": "Silencio administrativo",
+      "parent_id": "procedimiento-y-jurisdiccion"
+    },
+    {
+      "id": "temas-generales",
+      "name": "Temas generales",
+      "parent_id": null
+    },
+    {
+      "id": "transparencia-y-buen-gobierno",
+      "name": "Transparencia y buen gobierno",
+      "parent_id": "temas-generales"
+    },
+    {
+      "id": "trebep",
+      "name": "Texto refundido del Estatuto Básico del Empleado Público",
+      "parent_id": "legislacion"
+    }
+  ],
+  "questions": [
+    {
+      "id": "gobcan-a2-tinl26-q001",
+      "statement": "Conforme al artículo 9 de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, los órganos de las diferentes Administraciones Públicas podrán delegar:",
+      "options": [
+        {
+          "id": "A",
+          "text": "La adopción de disposiciones de carácter general."
+        },
+        {
+          "id": "B",
+          "text": "El ejercicio de las competencias que tengan atribuidas en otros órganos de la misma Administración."
+        },
+        {
+          "id": "C",
+          "text": "La resolución de recursos en los órganos administrativos que hayan dictado los actos objeto de recurso."
+        },
+        {
+          "id": "D",
+          "text": "Las materias en que así se determine por norma con rango de Ley."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "organizacion-administrativa",
+        "ley-40-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 1,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 3
+      },
+      "explanation": null,
+      "legal_reference": "Ley 40/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q002",
+      "statement": "Conforme al artículo 10.1 de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, un órgano superior asume para sí el conocimiento de uno o varios asuntos cuya resolución corresponda ordinariamente o por delegación a sus órganos administrativos dependientes, cuando circunstancias de índole técnica, económica, social, jurídica o territorial lo hagan conveniente, a través de la:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Avocación."
+        },
+        {
+          "id": "B",
+          "text": "Delegación de firma."
+        },
+        {
+          "id": "C",
+          "text": "Encomienda de gestión."
+        },
+        {
+          "id": "D",
+          "text": "Suplencia."
+        }
+      ],
+      "correct_option_id": "A",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "organizacion-administrativa",
+        "ley-40-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 2,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 3
+      },
+      "explanation": null,
+      "legal_reference": "Ley 40/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q003",
+      "statement": "Conforme al artículo 8.1 de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, la competencia administrativa es:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Delegable siempre."
+        },
+        {
+          "id": "B",
+          "text": "Irrenunciable y se ejercerá por los órganos administrativos que la tengan atribuida como propia, salvo los casos de delegación o avocación, cuando se efectúen en los términos previstos en ésta u otras leyes."
+        },
+        {
+          "id": "C",
+          "text": "Renunciable cuando el órgano lo considere oportuno."
+        },
+        {
+          "id": "D",
+          "text": "Transferible libremente entre Administraciones Públicas sin necesidad de norma habilitante."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "organizacion-administrativa",
+        "ley-40-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 3,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 3
+      },
+      "explanation": null,
+      "legal_reference": "Ley 40/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q004",
+      "statement": "Según el artículo 12 de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, la delegación de firma:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Alterará la competencia del órgano delegante."
+        },
+        {
+          "id": "B",
+          "text": "Es necesario publicarla en el boletín oficial correspondiente para que sea eficaz."
+        },
+        {
+          "id": "C",
+          "text": "No alterará la competencia del órgano delegante y para su validez no será necesaria su publicación."
+        },
+        {
+          "id": "D",
+          "text": "Requerirá la aprobación del Consejo de Gobierno."
+        }
+      ],
+      "correct_option_id": "C",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "organizacion-administrativa",
+        "ley-40-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 4,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 3
+      },
+      "explanation": null,
+      "legal_reference": "Ley 40/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q005",
+      "statement": "El artículo 17.2 de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, establece que para la válida constitución de un órgano colegiado, a efectos de la celebración de sesiones, deliberaciones y toma de acuerdos, se requerirá la asistencia, presencial o a distancia, de:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Al menos dos tercios de sus miembros."
+        },
+        {
+          "id": "B",
+          "text": "La totalidad de sus miembros."
+        },
+        {
+          "id": "C",
+          "text": "Presidente y Secretario o en su caso, de quienes les suplan, y la de la mitad, al menos, de sus miembros."
+        },
+        {
+          "id": "D",
+          "text": "Únicamente la del Presidente y un vocal."
+        }
+      ],
+      "correct_option_id": "C",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "organizacion-administrativa",
+        "ley-40-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 5,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 4
+      },
+      "explanation": null,
+      "legal_reference": "Ley 40/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q006",
+      "statement": "Según el artículo 5 de la Ley 12/2014, de 26 de diciembre, de transparencia y de acceso a la información pública, la información pública se entiende por:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Exclusivamente aquellos documentos que obren en los expedientes administrativos finalizados."
+        },
+        {
+          "id": "B",
+          "text": "Los contenidos o documentos, cualquiera que sea su formato o soporte, que obren en poder de alguno de los sujetos incluidos en el ámbito de aplicación de esta ley y que hayan sido elaborados o adquiridos en el ejercicio de sus funciones."
+        },
+        {
+          "id": "C",
+          "text": "Solo los datos estadísticos elaborados por la Administración."
+        },
+        {
+          "id": "D",
+          "text": "Los documentos clasificados como reservados por la Administración General del Estado."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "transparencia-y-buen-gobierno",
+        "ley-12-2014-transparencia-canarias"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 6,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 4
+      },
+      "explanation": null,
+      "legal_reference": "Ley 12/2014, de transparencia y de acceso a la información pública de Canarias",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q007",
+      "statement": "Entre los principios informadores recogidos en el artículo 6 de la Ley 12/2014, de 26 de diciembre, de transparencia y de acceso a la información pública, se encuentra el principio de:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Confidencialidad absoluta de toda la actividad administrativa."
+        },
+        {
+          "id": "B",
+          "text": "Libre acceso a la información pública."
+        },
+        {
+          "id": "C",
+          "text": "Restricción general del acceso a la información, salvo autorización expresa."
+        },
+        {
+          "id": "D",
+          "text": "Subordinación del derecho de acceso a la existencia de un interés económico acreditado."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "transparencia-y-buen-gobierno",
+        "ley-12-2014-transparencia-canarias"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 7,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 4
+      },
+      "explanation": null,
+      "legal_reference": "Ley 12/2014, de transparencia y de acceso a la información pública de Canarias",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q008",
+      "statement": "Según el artículo 8 de la Ley 12/2014, de 26 de diciembre, de transparencia y de acceso a la información pública, en relación a los derechos y obligaciones, las personas tienen derecho a:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Acceder a las deliberaciones internas de los órganos colegiados."
+        },
+        {
+          "id": "B",
+          "text": "Exigir la elaboración de informes o estudios que la Administración no haya realizado previamente."
+        },
+        {
+          "id": "C",
+          "text": "Obtener exclusivamente información en formato papel."
+        },
+        {
+          "id": "D",
+          "text": "Ser asistidas en su búsqueda de información."
+        }
+      ],
+      "correct_option_id": "D",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "transparencia-y-buen-gobierno",
+        "ley-12-2014-transparencia-canarias"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 8,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 4
+      },
+      "explanation": null,
+      "legal_reference": "Ley 12/2014, de transparencia y de acceso a la información pública de Canarias",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q009",
+      "statement": "Conforme al artículo 7.2 de la Ley 12/2014, de 26 de diciembre, de transparencia y de acceso a la información pública, las entidades relacionadas en el artículo 2 de dicha ley, para el cumplimiento de la obligación de transparencia, deben:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Facilitar información únicamente de forma presencial, previa identificación de la persona solicitante."
+        },
+        {
+          "id": "B",
+          "text": "Publicar exclusivamente la información que haya sido solicitada previamente por la ciudadanía."
+        },
+        {
+          "id": "C",
+          "text": "Publicar la información sujeta a la obligación de transparencia de una manera clara, estructurada y entendible para los interesados."
+        },
+        {
+          "id": "D",
+          "text": "Publicar solo la información relativa a sus presupuestos y contratos."
+        }
+      ],
+      "correct_option_id": "C",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "transparencia-y-buen-gobierno",
+        "ley-12-2014-transparencia-canarias"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 9,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 4
+      },
+      "explanation": null,
+      "legal_reference": "Ley 12/2014, de transparencia y de acceso a la información pública de Canarias",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q010",
+      "statement": "Conforme al artículo 51 de la Ley 12/2014, de 26 de diciembre, de transparencia y de acceso a la información pública, contra la resolución, expresa o presunta, de la solicitud de acceso podrá interponerse:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Exclusivamente recurso contencioso-administrativo."
+        },
+        {
+          "id": "B",
+          "text": "Recurso de alzada ante el órgano que dicta la resolución."
+        },
+        {
+          "id": "C",
+          "text": "Reclamación ante el comisionado de Transparencia y Acceso a la Información."
+        },
+        {
+          "id": "D",
+          "text": "Recurso directamente al Tribunal Constitucional."
+        }
+      ],
+      "correct_option_id": "C",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "transparencia-y-buen-gobierno",
+        "ley-12-2014-transparencia-canarias"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 10,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 4
+      },
+      "explanation": null,
+      "legal_reference": "Ley 12/2014, de transparencia y de acceso a la información pública de Canarias",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q011",
+      "statement": "Las resoluciones sobre las solicitudes de acceso se adoptarán y notificarán, según el artículo 46 de la Ley 12/2014, de 26 de diciembre, de transparencia y de acceso a la información pública, en el plazo máximo de:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Diez días hábiles desde la recepción de la solicitud."
+        },
+        {
+          "id": "B",
+          "text": "Un mes desde su recepción por el órgano competente para resolver."
+        },
+        {
+          "id": "C",
+          "text": "Tres meses desde la presentación de la solicitud en cualquier registro."
+        },
+        {
+          "id": "D",
+          "text": "Seis meses desde la fecha de registro de entrada."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "transparencia-y-buen-gobierno",
+        "ley-12-2014-transparencia-canarias"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 11,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 5
+      },
+      "explanation": null,
+      "legal_reference": "Ley 12/2014, de transparencia y de acceso a la información pública de Canarias",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q012",
+      "statement": "De acuerdo con el artículo 35 de la Ley 12/2014, de 26 de diciembre, de transparencia y de acceso a la información pública, ¿quiénes son titulares del derecho de acceso a la información pública?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Solo las personas físicas que tengan la condición de interesadas en un procedimiento administrativo."
+        },
+        {
+          "id": "B",
+          "text": "Solo las personas empadronadas en algún municipio de la Comunidad Autónoma de Canarias."
+        },
+        {
+          "id": "C",
+          "text": "Todas las personas, en los términos previstos en esta ley y en el resto del ordenamiento jurídico."
+        },
+        {
+          "id": "D",
+          "text": "Únicamente las personas jurídicas que acrediten un interés legítimo."
+        }
+      ],
+      "correct_option_id": "C",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "transparencia-y-buen-gobierno",
+        "ley-12-2014-transparencia-canarias"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 12,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 5
+      },
+      "explanation": null,
+      "legal_reference": "Ley 12/2014, de transparencia y de acceso a la información pública de Canarias",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q013",
+      "statement": "El principio de minimización de datos, contemplado en el artículo 5.1 del Reglamento (UE) 2016/679, de 27 de abril de 2016, relativo a la protección de las personas físicas, exige que los datos personales sean:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Almacenados de forma indefinida para garantizar la trazabilidad."
+        },
+        {
+          "id": "B",
+          "text": "Adecuados, pertinentes y limitados a lo necesario en relación con los fines para los que son tratados."
+        },
+        {
+          "id": "C",
+          "text": "Comunicados a todas las autoridades públicas que los soliciten."
+        },
+        {
+          "id": "D",
+          "text": "Recogidos en la mayor cantidad posible para permitir análisis estadísticos futuros."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "proteccion-de-datos",
+        "rgpd"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 13,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 5
+      },
+      "explanation": null,
+      "legal_reference": "Reglamento (UE) 2016/679, General de Protección de Datos",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q014",
+      "statement": "El artículo 32 del Reglamento general de protección de datos indica que el responsable y el encargado del tratamiento aplicarán medidas técnicas y organizativas apropiadas para garantizar un nivel de seguridad adecuado al riesgo, que en su caso incluya la:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Conservación indefinida de los datos personales."
+        },
+        {
+          "id": "B",
+          "text": "Destrucción periódica de todos los datos personales cada seis meses."
+        },
+        {
+          "id": "C",
+          "text": "Externalización obligatoria del tratamiento a una empresa certificada."
+        },
+        {
+          "id": "D",
+          "text": "Seudonimización y el cifrado de datos personales."
+        }
+      ],
+      "correct_option_id": "D",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "proteccion-de-datos",
+        "rgpd"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 14,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 5
+      },
+      "explanation": null,
+      "legal_reference": "Reglamento (UE) 2016/679, General de Protección de Datos",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q015",
+      "statement": "Según el derecho de supresión (derecho al olvido), contemplado en el artículo 17 del Reglamento general de protección de datos, el responsable del tratamiento estará obligado a suprimir sin dilación indebida los datos personales cuando:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cualquier tercero solicita su eliminación sin necesidad de justificación."
+        },
+        {
+          "id": "B",
+          "text": "El encargado del tratamiento decide unilateralmente que los datos son irrelevantes."
+        },
+        {
+          "id": "C",
+          "text": "Hayan transcurrido más de cinco años desde su recogida, con independencia de su necesidad."
+        },
+        {
+          "id": "D",
+          "text": "Los datos ya no sean necesarios en relación con los fines para los que fueron recogidos o tratados de otro modo."
+        }
+      ],
+      "correct_option_id": "D",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "proteccion-de-datos",
+        "rgpd"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 15,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 5
+      },
+      "explanation": null,
+      "legal_reference": "Reglamento (UE) 2016/679, General de Protección de Datos",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q016",
+      "statement": "Conforme al artículo 14 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, están obligados a relacionarse electrónicamente con las Administraciones Públicas:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Las entidades sin personalidad jurídica."
+        },
+        {
+          "id": "B",
+          "text": "Todas las personas físicas."
+        },
+        {
+          "id": "C",
+          "text": "Toda persona que ejerza una actividad profesional."
+        },
+        {
+          "id": "D",
+          "text": "Únicamente las empresas con más de 250 trabajadores."
+        }
+      ],
+      "correct_option_id": "A",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "administracion-publica-digital",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 16,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 5
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q017",
+      "statement": "En relación con la representación en el procedimiento administrativo común, conforme al artículo 5 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, deberá acreditarse la representación para:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Comparecer ante cualquier órgano administrativo."
+        },
+        {
+          "id": "B",
+          "text": "Formular cualquier escrito dirigido a la Administración."
+        },
+        {
+          "id": "C",
+          "text": "Formular solicitudes, presentar declaraciones responsables o comunicaciones, interponer recursos, desistir de acciones y renunciar a derechos en nombre de otras personas."
+        },
+        {
+          "id": "D",
+          "text": "Realizar exclusivamente actuaciones presenciales."
+        }
+      ],
+      "correct_option_id": "C",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "interesados-y-representacion",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 17,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 6
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q018",
+      "statement": "Según el artículo 5 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, en relación con la representación:",
+      "options": [
+        {
+          "id": "A",
+          "text": "La representación solo es válida si se formaliza ante notario."
+        },
+        {
+          "id": "B",
+          "text": "La representación impide que el interesado actúe personalmente en el procedimiento."
+        },
+        {
+          "id": "C",
+          "text": "La representación solo puede otorgarse a abogados o procuradores."
+        },
+        {
+          "id": "D",
+          "text": "Los interesados con capacidad de obrar pueden actuar por medio de representante."
+        }
+      ],
+      "correct_option_id": "D",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "interesados-y-representacion",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 18,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 6
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q019",
+      "statement": "Cuando la representación no se acredite de forma suficiente, el artículo 5 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, establece que:",
+      "options": [
+        {
+          "id": "A",
+          "text": "El procedimiento se archiva automáticamente."
+        },
+        {
+          "id": "B",
+          "text": "No puede continuarse el procedimiento."
+        },
+        {
+          "id": "C",
+          "text": "Puede subsanarse en el plazo de diez días."
+        },
+        {
+          "id": "D",
+          "text": "Se declara la nulidad del procedimiento."
+        }
+      ],
+      "correct_option_id": "C",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "interesados-y-representacion",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 19,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 6
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q020",
+      "statement": "Conforme al artículo 9 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, la aceptación de un sistema de identificación electrónica por la Administración General del Estado:",
+      "options": [
+        {
+          "id": "A",
+          "text": "No tiene efectos frente a otras Administraciones Públicas."
+        },
+        {
+          "id": "B",
+          "text": "Requiere autorización expresa de cada Administración Pública para su validez."
+        },
+        {
+          "id": "C",
+          "text": "Sirve para acreditar frente a todas las Administraciones Públicas, salvo prueba en contrario, la identificación electrónica de los interesados en el procedimiento administrativo."
+        },
+        {
+          "id": "D",
+          "text": "Solo produce efectos en el procedimiento administrativo concreto para el que se haya autorizado."
+        }
+      ],
+      "correct_option_id": "C",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "criptografia-identidad-y-firma",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 20,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 6
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q021",
+      "statement": "Según el artículo 16.2 de la Ley 39/2015 de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, los asientos en los registros electrónicos se anotarán:",
+      "options": [
+        {
+          "id": "A",
+          "text": "En base al órgano administrativo remitente o al que se remite."
+        },
+        {
+          "id": "B",
+          "text": "En base al contenido del documento que se registra."
+        },
+        {
+          "id": "C",
+          "text": "En base a la identificación del interesado."
+        },
+        {
+          "id": "D",
+          "text": "Respetando el orden temporal de recepción o salida de los documentos."
+        }
+      ],
+      "correct_option_id": "D",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "notificaciones-y-registro",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 21,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 6
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q022",
+      "statement": "Según el artículo 43.2 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, cuando la notificación por medios electrónicos sea de carácter obligatorio o haya sido expresamente elegida por el interesado, se entenderá rechazada cuando:",
+      "options": [
+        {
+          "id": "A",
+          "text": "El interesado no confirme su recepción en el plazo establecido en la resolución administrativa."
+        },
+        {
+          "id": "B",
+          "text": "Hayan transcurrido cinco días hábiles desde la puesta a disposición de la notificación sin que se confirme su recepción."
+        },
+        {
+          "id": "C",
+          "text": "Hayan transcurrido diez días naturales desde la puesta a disposición de la notificación sin que se acceda a su contenido."
+        },
+        {
+          "id": "D",
+          "text": "Hayan transcurrido quince días naturales desde la publicación en el boletín oficial correspondiente."
+        }
+      ],
+      "correct_option_id": "C",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "notificaciones-y-registro",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 22,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 6
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q023",
+      "statement": "De conformidad con el artículo 38.1 de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público la sede electrónica es:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Aquella página web de titularidad pública disponible para los ciudadanos."
+        },
+        {
+          "id": "B",
+          "text": "Aquella dirección electrónica, disponible para los ciudadanos a través de redes de telecomunicaciones, cuya titularidad corresponde a una Administración Pública, o bien a una o varios organismos públicos o entidades de Derecho Público en el ejercicio de sus competencias."
+        },
+        {
+          "id": "C",
+          "text": "El conjunto de medios electrónicos, disponibles para los ciudadanos, a través de redes de telecomunicaciones, cuya titularidad corresponde a una Administración Pública."
+        },
+        {
+          "id": "D",
+          "text": "Es aquel órgano de la Administración Pública que pone a disposición de los ciudadanos, a través de redes de telecomunicaciones, los medios para relacionarse electrónicamente con la Administración."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "administracion-publica-digital",
+        "ley-40-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 23,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 7
+      },
+      "explanation": null,
+      "legal_reference": "Ley 40/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q024",
+      "statement": "Según el artículo 24 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, en los casos de desestimación de una solicitud por silencio administrativo, la resolución expresa posterior al vencimiento del plazo:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Se adoptará por la Administración sin vinculación alguna al sentido del silencio."
+        },
+        {
+          "id": "B",
+          "text": "Será nula de pleno derecho."
+        },
+        {
+          "id": "C",
+          "text": "Solo podrá ser estimatoria."
+        },
+        {
+          "id": "D",
+          "text": "Solo podrá ser desestimatoria."
+        }
+      ],
+      "correct_option_id": "A",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "silencio-administrativo",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 24,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 7
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q025",
+      "statement": "En virtud del artículo 39.3 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, excepcionalmente podrá otorgarse eficacia retroactiva a los actos:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cuando se dicten en sustitución de actos anulables."
+        },
+        {
+          "id": "B",
+          "text": "Cuando se produzca un supuesto de convalidación de actos administrativos y siempre que los supuestos de hecho necesarios ya existieran en la fecha a que se retrotraiga la eficacia del acto y esta no lesione derechos o intereses legítimos de otras personas."
+        },
+        {
+          "id": "C",
+          "text": "Cuando se dicten en sustitución de actos anulados, así como cuando produzcan efectos favorables al interesado, siempre que los supuestos de hecho necesarios existieran ya en la fecha a que se retrotraiga la eficacia del acto y ésta no lesione derechos o intereses legítimos de otras personas."
+        },
+        {
+          "id": "D",
+          "text": "No podrá otorgarse."
+        }
+      ],
+      "correct_option_id": "C",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "actos-administrativos",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 25,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 7
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q026",
+      "statement": "Conforme a la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, en su artículo 107, se establece que la declaración de lesividad de actos anulables no podrá adoptarse una vez transcurridos:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Un mes desde que se dictó el acto administrativo."
+        },
+        {
+          "id": "B",
+          "text": "Tres meses desde que se dictó el acto administrativo."
+        },
+        {
+          "id": "C",
+          "text": "Seis meses desde que se dictó el acto administrativo."
+        },
+        {
+          "id": "D",
+          "text": "Cuatro años desde que se dictó el acto administrativo."
+        }
+      ],
+      "correct_option_id": "D",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "actos-administrativos",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 26,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 7
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q027",
+      "statement": "Son nulos de pleno derecho los actos administrativos, a tenor del artículo 47.1 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dictados con defectos de forma no esenciales."
+        },
+        {
+          "id": "B",
+          "text": "Dictados fuera del plazo máximo de resolución."
+        },
+        {
+          "id": "C",
+          "text": "Dictados por órgano jerárquicamente incompetente."
+        },
+        {
+          "id": "D",
+          "text": "Dictados por órgano manifiestamente incompetente por razón de la materia o del territorio."
+        }
+      ],
+      "correct_option_id": "D",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "actos-administrativos",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 27,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 7
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q028",
+      "statement": "Según el artículo 50 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, relativo a la conversión de actos viciados:",
+      "options": [
+        {
+          "id": "A",
+          "text": "La conversión de actos viciados requiere de un pronunciamiento expreso del órgano competente."
+        },
+        {
+          "id": "B",
+          "text": "Los actos nulos o anulables que, sin embargo, contengan los elementos constitutivos de otro distinto producirán los efectos de éste."
+        },
+        {
+          "id": "C",
+          "text": "Los actos viciados nunca podrán producir efectos distintos a los previstos originalmente."
+        },
+        {
+          "id": "D",
+          "text": "Solo los actos anulables pueden convertirse en actos de otro tipo, nunca los nulos."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "actos-administrativos",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 28,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 8
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q029",
+      "statement": "Según el artículo 39.1 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, los actos de las Administraciones Públicas sujetos al Derecho Administrativo:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Carecerán de eficacia hasta que transcurra el plazo para interponer recurso administrativo."
+        },
+        {
+          "id": "B",
+          "text": "Producirán efectos desde el día siguiente al de su notificación."
+        },
+        {
+          "id": "C",
+          "text": "Se presumirán válidos y producirán efectos desde la fecha en que se dicten, salvo que en ellos se disponga otra cosa."
+        },
+        {
+          "id": "D",
+          "text": "Solo producirán efectos cuando sean publicados en el diario oficial correspondiente."
+        }
+      ],
+      "correct_option_id": "C",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "actos-administrativos",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 29,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 8
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q030",
+      "statement": "Según el artículo 45.1 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, los actos administrativos serán objeto de publicación cuando:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Así lo establezcan las normas reguladoras de cada procedimiento o cuando lo aconsejen razones de interés público apreciadas por el órgano competente."
+        },
+        {
+          "id": "B",
+          "text": "El interesado lo solicite expresamente ante el órgano competente."
+        },
+        {
+          "id": "C",
+          "text": "Hayan transcurrido diez días desde su notificación sin que conste su recepción."
+        },
+        {
+          "id": "D",
+          "text": "Todos los actos administrativos serán objeto de publicación."
+        }
+      ],
+      "correct_option_id": "A",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "actos-administrativos",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 30,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 8
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q031",
+      "statement": "Según el artículo 41.1 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿quién podrá decidir y comunicar en cualquier momento a la Administración Pública, mediante los modelos normalizados que se establezcan al efecto, que las notificaciones sucesivas se practiquen o dejen de practicarse por medios electrónicos?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Los interesados que no estén obligados a recibir notificaciones electrónicas."
+        },
+        {
+          "id": "B",
+          "text": "Todos los interesados."
+        },
+        {
+          "id": "C",
+          "text": "Los interesados que estén obligados a recibir notificaciones electrónicas."
+        },
+        {
+          "id": "D",
+          "text": "Todas las personas físicas."
+        }
+      ],
+      "correct_option_id": "A",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "notificaciones-y-registro",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 31,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 8
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q032",
+      "statement": "Según el artículo 38.6 de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, las sedes electrónicas utilizarán, para identificarse y garantizar una comunicación segura con las mismas:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Contraseñas personales y únicas."
+        },
+        {
+          "id": "B",
+          "text": "Certificados reconocidos o cualificados de autenticación de sitio web o medio equivalente."
+        },
+        {
+          "id": "C",
+          "text": "Firma electrónica de la autoridad competente."
+        },
+        {
+          "id": "D",
+          "text": "Identificador de usuario y su contraseña asociada proporcionada por la Administración."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "administracion-publica-digital",
+        "ley-40-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 32,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 8
+      },
+      "explanation": null,
+      "legal_reference": "Ley 40/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q033",
+      "statement": "Según el artículo 106 de la Ley 39/2015, de 1 de octubre, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿qué actos administrativos pueden ser declarados nulos de oficio por las Administraciones Públicas?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Los actos de trámite simples."
+        },
+        {
+          "id": "B",
+          "text": "Los actos que hayan puesto fin a la vía administrativa o que no hayan sido recurridos en plazo, en los supuestos previstos en el artículo 47.1."
+        },
+        {
+          "id": "C",
+          "text": "Los actos recurridos en alzada pendientes de resolución."
+        },
+        {
+          "id": "D",
+          "text": "Los actos firmes confirmados por sentencia."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "actos-administrativos",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 33,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 8
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q034",
+      "statement": "Según el artículo 106 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, en la revisión de disposiciones y actos nulos, si el procedimiento se inicia de oficio y no se dicta resolución en un plazo de seis meses, ¿qué efecto produce?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Caducidad del procedimiento."
+        },
+        {
+          "id": "B",
+          "text": "Convalidación del acto revisado."
+        },
+        {
+          "id": "C",
+          "text": "Estimación por silencio administrativo."
+        },
+        {
+          "id": "D",
+          "text": "Suspensión automática del acto."
+        }
+      ],
+      "correct_option_id": "A",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "actos-administrativos",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 34,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 9
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q035",
+      "statement": "Según el artículo 109 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, éstas podrán revocar sus actos de gravamen o desfavorables, siempre que tal revocación no constituya dispensa o exención no permitida por las leyes, ni sea contraria al principio de igualdad, al interés público o al ordenamiento jurídico:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cuando lo autorice el órgano judicial competente o así lo solicite el interesado."
+        },
+        {
+          "id": "B",
+          "text": "Dentro de los seis meses siguientes en cualquier caso."
+        },
+        {
+          "id": "C",
+          "text": "En cualquier momento, aunque haya prescrito el derecho del afectado."
+        },
+        {
+          "id": "D",
+          "text": "Mientras no haya transcurrido el plazo de prescripción."
+        }
+      ],
+      "correct_option_id": "D",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "actos-administrativos",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 35,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 9
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q036",
+      "statement": "Según el artículo 30 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas siempre que por Ley o en el Derecho de la Unión Europea no se exprese otro cómputo, cuando los plazos se señalen por días, se entiende que éstos son:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Días hábiles, incluidos sábados."
+        },
+        {
+          "id": "B",
+          "text": "Días hábiles, excluidos sábados, domingos y festivos."
+        },
+        {
+          "id": "C",
+          "text": "Días naturales, excluidos domingos y festivos."
+        },
+        {
+          "id": "D",
+          "text": "Días naturales incluidos festivos nacionales y autonómicos."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "plazos-administrativos",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 36,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 9
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q037",
+      "statement": "Según el artículo 30 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas en relación al cómputo de plazos, cuando el último día del plazo sea inhábil, se entenderá que:",
+      "options": [
+        {
+          "id": "A",
+          "text": "El plazo finaliza el día hábil anterior."
+        },
+        {
+          "id": "B",
+          "text": "El plazo finaliza ese último día inhábil."
+        },
+        {
+          "id": "C",
+          "text": "El plazo se prorroga al primer día hábil siguiente."
+        },
+        {
+          "id": "D",
+          "text": "El plazo se prorroga automáticamente tres días naturales."
+        }
+      ],
+      "correct_option_id": "C",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "plazos-administrativos",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 37,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 9
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q038",
+      "statement": "Según el artículo 3 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿quiénes tienen capacidad de obrar ante las Administraciones Públicas?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Exclusivamente las personas jurídicas debidamente inscritas."
+        },
+        {
+          "id": "B",
+          "text": "Las personas físicas o jurídicas que ostenten capacidad de obrar con arreglo a las normas civiles."
+        },
+        {
+          "id": "C",
+          "text": "Los grupos de afectados en todo caso."
+        },
+        {
+          "id": "D",
+          "text": "Solo las personas físicas mayores de edad."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "interesados-y-representacion",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 38,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 9
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q039",
+      "statement": "De acuerdo con el artículo 13 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, entre los derechos de las personas en sus relaciones con las Administraciones figura:",
+      "options": [
+        {
+          "id": "A",
+          "text": "A incomunicarse con las Administraciones Públicas a través de un Punto de Acceso General electrónico de la Administración."
+        },
+        {
+          "id": "B",
+          "text": "A no ser tratados con respeto y deferencia por las autoridades y empleados."
+        },
+        {
+          "id": "C",
+          "text": "Exigir resolución verbal en todo trámite."
+        },
+        {
+          "id": "D",
+          "text": "Exigir las responsabilidades de las Administraciones Públicas y autoridades, cuando así corresponda legalmente."
+        }
+      ],
+      "correct_option_id": "D",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "interesados-y-representacion",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 39,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 9
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q040",
+      "statement": "Según el artículo 54 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas los procedimientos podrán iniciarse:",
+      "options": [
+        {
+          "id": "A",
+          "text": "De oficio o a solicitud del interesado."
+        },
+        {
+          "id": "B",
+          "text": "En todos los casos por reclamación previa."
+        },
+        {
+          "id": "C",
+          "text": "En todos los casos de oficio."
+        },
+        {
+          "id": "D",
+          "text": "En todos los casos a solicitud del interesado."
+        }
+      ],
+      "correct_option_id": "A",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "instruccion-y-resolucion",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 40,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 10
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q041",
+      "statement": "Según el artículo 75.3 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas cuando la práctica de los actos de instrucción requieran la intervención de los interesados, habrán de practicarse:",
+      "options": [
+        {
+          "id": "A",
+          "text": "En el plazo improrrogable de diez días desde la notificación, conforme al trámite de audiencia regulado con carácter general en el procedimiento."
+        },
+        {
+          "id": "B",
+          "text": "En el lugar y momento que determine el órgano instructor mediante resolución motivada, sin posibilidad de recurso por parte de los interesados."
+        },
+        {
+          "id": "C",
+          "text": "En la forma que resulte más conveniente para ellos y sea compatible, en la medida de lo posible, con sus obligaciones laborales o profesionales."
+        },
+        {
+          "id": "D",
+          "text": "Preferentemente por medios electrónicos, salvo que el interesado carezca de los medios técnicos necesarios, en cuyo caso el órgano instructor fijará la forma unilateralmente."
+        }
+      ],
+      "correct_option_id": "C",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "instruccion-y-resolucion",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 41,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 10
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q042",
+      "statement": "Según el artículo 41.7 de la Ley 39/2015 de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, cuando el interesado fuera notificado por distintos cauces, se tomará como fecha de notificación:",
+      "options": [
+        {
+          "id": "A",
+          "text": "La que el interesado hubiera comunicado mediante la formalización del modelo normalizado correspondiente."
+        },
+        {
+          "id": "B",
+          "text": "Prevalecerá siempre la notificación hecha a través de medios electrónicos."
+        },
+        {
+          "id": "C",
+          "text": "La de aquélla que se hubiera producido en primer lugar."
+        },
+        {
+          "id": "D",
+          "text": "En procedimientos iniciados a solicitud del interesado, la que se realice por el medio señalado al efecto por aquél, y en procedimientos iniciados de oficio por la Administración, la realizada a través de medios electrónicos."
+        }
+      ],
+      "correct_option_id": "C",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "notificaciones-y-registro",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 42,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 10
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q043",
+      "statement": "Según el artículo 121 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, cuando una resolución no ponga fin a la vía administrativa, ¿ante qué órgano se podrá recurrir en alzada?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cualquier órgano de la Administración pública sin excepción."
+        },
+        {
+          "id": "B",
+          "text": "Cualquier juzgado de lo contencioso-administrativo."
+        },
+        {
+          "id": "C",
+          "text": "El Departamento competente en materia de Administraciones Públicas."
+        },
+        {
+          "id": "D",
+          "text": "El órgano jerárquicamente superior."
+        }
+      ],
+      "correct_option_id": "D",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "recursos-administrativos",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 43,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 10
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q044",
+      "statement": "Según el artículo 117 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, excepto en los casos en que una disposición establezca lo contrario, ¿qué efecto tiene la interposición de un recurso administrativo?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Anula provisionalmente el acto."
+        },
+        {
+          "id": "B",
+          "text": "No suspende la ejecución del acto impugnado."
+        },
+        {
+          "id": "C",
+          "text": "Paraliza la ejecución durante 10 días hábiles de forma improrrogable."
+        },
+        {
+          "id": "D",
+          "text": "Suspende automáticamente la ejecución del acto impugnado."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "recursos-administrativos",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 44,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 10
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q045",
+      "statement": "Según el artículo 123 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, respecto a los actos administrativos que pongan fin a la vía administrativa:",
+      "options": [
+        {
+          "id": "A",
+          "text": "No podrán ser recurridos en ningún caso."
+        },
+        {
+          "id": "B",
+          "text": "Podrán ser objeto de recurso contencioso-administrativo inmediatamente después de interponer recurso de reposición, sin esperar a que este sea resuelto expresamente o a que se produzca su desestimación presunta."
+        },
+        {
+          "id": "C",
+          "text": "Podrán ser recurridos en alzada."
+        },
+        {
+          "id": "D",
+          "text": "Podrán ser recurridos potestativamente en reposición ante el mismo órgano que los hubiese dictado."
+        }
+      ],
+      "correct_option_id": "D",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "recursos-administrativos",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 45,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 11
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q046",
+      "statement": "Según el artículo 122 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, contra la resolución de un recurso de alzada, se podrá interponer:",
+      "options": [
+        {
+          "id": "A",
+          "text": "El recurso de reposición."
+        },
+        {
+          "id": "B",
+          "text": "El recurso extraordinario de reposición."
+        },
+        {
+          "id": "C",
+          "text": "El recurso extraordinario de revisión."
+        },
+        {
+          "id": "D",
+          "text": "En ningún caso podrá interponer otro recurso administrativo."
+        }
+      ],
+      "correct_option_id": "C",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "recursos-administrativos",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 46,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 11
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q047",
+      "statement": "Según el artículo 122 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas ¿cuál es el plazo para interponer recurso de alzada contra un acto expreso?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Diez días."
+        },
+        {
+          "id": "B",
+          "text": "Quince días."
+        },
+        {
+          "id": "C",
+          "text": "Un mes."
+        },
+        {
+          "id": "D",
+          "text": "Tres meses."
+        }
+      ],
+      "correct_option_id": "C",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "recursos-administrativos",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 47,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 11
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q048",
+      "statement": "Según el artículo 36.4 de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, respecto al procedimiento para la exigencia de la responsabilidad patrimonial de las autoridades y personal al servicio de las Administraciones Públicas, el plazo para la formulación de la propuesta de resolución por el órgano competente será de:",
+      "options": [
+        {
+          "id": "A",
+          "text": "5 días a contar desde la finalización del trámite de audiencia."
+        },
+        {
+          "id": "B",
+          "text": "10 días a contar desde la finalización del trámite de audiencia."
+        },
+        {
+          "id": "C",
+          "text": "15 días a contar desde la finalización del trámite de audiencia."
+        },
+        {
+          "id": "D",
+          "text": "20 días a contar desde la finalización del trámite de audiencia."
+        }
+      ],
+      "correct_option_id": "A",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "responsabilidad-patrimonial",
+        "ley-40-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 48,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 11
+      },
+      "explanation": null,
+      "legal_reference": "Ley 40/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q049",
+      "statement": "La encomienda de gestión, regulada en el artículo 11.1 de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, supone:",
+      "options": [
+        {
+          "id": "A",
+          "text": "La transferencia de la titularidad de la competencia a otro órgano o entidad, que podrá ejercerla como propia."
+        },
+        {
+          "id": "B",
+          "text": "La realización de actividades de carácter material o técnico de la competencia de los órganos administrativos o de las Entidades de Derecho Público."
+        },
+        {
+          "id": "C",
+          "text": "La cesión permanente e irrevocable de potestades administrativas a entes del sector público institucional."
+        },
+        {
+          "id": "D",
+          "text": "Una forma de delegación intersubjetiva que requiere publicación en el Boletín Oficial del Estado para ser eficaz."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "organizacion-administrativa",
+        "ley-40-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 49,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 11
+      },
+      "explanation": null,
+      "legal_reference": "Ley 40/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q050",
+      "statement": "La encomienda de gestión, regulada en el artículo 11.2 de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Genera una relación contractual sujeta a la legislación de contratos del sector público entre encomendante y encomendado."
+        },
+        {
+          "id": "B",
+          "text": "No supone cesión de la titularidad de la competencia ni de los elementos sustantivos de su ejercicio."
+        },
+        {
+          "id": "C",
+          "text": "Requiere siempre autorización del Consejo de Ministros cuando afecte a organismos autónomos del Estado."
+        },
+        {
+          "id": "D",
+          "text": "Transfiere la titularidad de la competencia y la responsabilidad derivada de su ejercicio al ente encomendado."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "organizacion-administrativa",
+        "ley-40-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 50,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 12
+      },
+      "explanation": null,
+      "legal_reference": "Ley 40/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q051",
+      "statement": "Según el artículo 47.1 de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, son convenios los:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Acuerdos con efectos jurídicos adoptados por las Administraciones Públicas, los organismos públicos y entidades de derecho público vinculados o dependientes o las Universidades públicas entre sí o con sujetos de derecho privado para un fin común."
+        },
+        {
+          "id": "B",
+          "text": "Actos administrativos multilaterales que crean derechos subjetivos a favor de los ciudadanos interesados en su cumplimiento."
+        },
+        {
+          "id": "C",
+          "text": "Contratos celebrados exclusivamente entre Administraciones Públicas para la prestación de servicios públicos de competencia compartida."
+        },
+        {
+          "id": "D",
+          "text": "Instrumentos de coordinación de carácter normativo que vinculan exclusivamente a Administraciones Públicas del mismo nivel territorial."
+        }
+      ],
+      "correct_option_id": "A",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "organizacion-administrativa",
+        "ley-40-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 51,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 12
+      },
+      "explanation": null,
+      "legal_reference": "Ley 40/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q052",
+      "statement": "Según el artículo 32.2 de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, el daño alegado por el particular para dar lugar a responsabilidad patrimonial de la Administración habrá de ser, en todo caso:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Doloso, imputable a un funcionario concreto y debidamente identificado."
+        },
+        {
+          "id": "B",
+          "text": "Efectivo, evaluable económicamente e individualizado con relación a una persona o grupo de personas."
+        },
+        {
+          "id": "C",
+          "text": "Grave, continuado en el tiempo y previsible."
+        },
+        {
+          "id": "D",
+          "text": "Superior a la cuantía mínima que se determine reglamentariamente para cada ejercicio presupuestario."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "responsabilidad-patrimonial",
+        "ley-40-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 52,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 12
+      },
+      "explanation": null,
+      "legal_reference": "Ley 40/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q053",
+      "statement": "Según el artículo 36.2 de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, cuando la Administración haya indemnizado a los lesionados, exigirá de oficio en vía administrativa la responsabilidad a sus autoridades y personal a su servicio cuando hubieran incurrido en:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cualquier tipo de error o negligencia, por leve que sea."
+        },
+        {
+          "id": "B",
+          "text": "Dolo, o culpa o negligencia graves."
+        },
+        {
+          "id": "C",
+          "text": "Incumplimiento de un plazo administrativo, con independencia de su gravedad."
+        },
+        {
+          "id": "D",
+          "text": "Una infracción disciplinaria previamente sancionada por la propia Administración."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "responsabilidad-patrimonial",
+        "ley-40-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 53,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 12
+      },
+      "explanation": null,
+      "legal_reference": "Ley 40/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q054",
+      "statement": "Según el artículo 67.1 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, el derecho a reclamar en materia de responsabilidad patrimonial prescribe:",
+      "options": [
+        {
+          "id": "A",
+          "text": "A los seis meses de producido el hecho o el acto que motive la indemnización."
+        },
+        {
+          "id": "B",
+          "text": "Al año de producido el hecho o el acto que motive la indemnización, o de manifestarse su efecto lesivo."
+        },
+        {
+          "id": "C",
+          "text": "A los dos años, salvo que una norma con rango de ley establezca otro plazo."
+        },
+        {
+          "id": "D",
+          "text": "A los cuatro años de producido el hecho o el acto que motive la indemnización."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "responsabilidad-patrimonial",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 54,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 12
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q055",
+      "statement": "Según el artículo 47 bis.2 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el Texto Refundido de la Ley del Estatuto Básico del Empleado Público, la prestación del servicio mediante teletrabajo:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Está prohibida con carácter general, salvo en supuestos de emergencia o catástrofe declarada por el Gobierno."
+        },
+        {
+          "id": "B",
+          "text": "Habrá de ser expresamente autorizada, será compatible con la modalidad presencial y tendrá, en todo caso, carácter voluntario y reversible, salvo en supuestos excepcionales debidamente justificados."
+        },
+        {
+          "id": "C",
+          "text": "Se reconoce como un derecho subjetivo del empleado público que la Administración debe satisfacer siempre que así se solicite."
+        },
+        {
+          "id": "D",
+          "text": "Requiere autorización previa del Departamento competente en materia de Función Pública, con independencia de la Administración Pública de que se trate."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "funcion-publica-y-liderazgo",
+        "trebep"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 55,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 13
+      },
+      "explanation": null,
+      "legal_reference": "Real Decreto Legislativo 5/2015, texto refundido del Estatuto Básico del Empleado Público",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q056",
+      "statement": "El artículo 48 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, reconoce a los funcionarios de carrera el permiso por fallecimiento del cónyuge, pareja de hecho o familiar dentro del primer grado de consanguinidad o afinidad. Su duración es de:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tres días hábiles cuando el suceso se produzca en la misma localidad y cinco días hábiles cuando sea en distinta localidad."
+        },
+        {
+          "id": "B",
+          "text": "Cuatro días hábiles si ocurre en la misma localidad y seis días hábiles si es en distinta localidad."
+        },
+        {
+          "id": "C",
+          "text": "Cinco días hábiles cuando el suceso se produzca en la misma localidad y siete días hábiles cuando sea en distinta localidad."
+        },
+        {
+          "id": "D",
+          "text": "Cinco días hábiles si el fallecimiento se produce en la misma localidad y ocho días hábiles si se produce en distinta localidad."
+        }
+      ],
+      "correct_option_id": "A",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "funcion-publica-y-liderazgo",
+        "trebep"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 56,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 13
+      },
+      "explanation": null,
+      "legal_reference": "Real Decreto Legislativo 5/2015, texto refundido del Estatuto Básico del Empleado Público",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q057",
+      "statement": "Los principios de conducta de los empleados públicos, recogidos en el artículo 54 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el Texto Refundido de la Ley del Estatuto Básico del Empleado Público, establecen que estos:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Guardarán secreto sobre todos los asuntos relacionados con su actividad pública, incluyendo aquellos de carácter no clasificado."
+        },
+        {
+          "id": "B",
+          "text": "Informarán a la ciudadanía únicamente a través de los canales oficiales establecidos por la Administración, absteniéndose de comunicaciones directas no autorizadas."
+        },
+        {
+          "id": "C",
+          "text": "Se abstendrán de participar en cualquier actividad política o sindical durante el horario de trabajo y en el ejercicio de sus funciones públicas."
+        },
+        {
+          "id": "D",
+          "text": "Tratarán con atención y respeto a los ciudadanos, a sus superiores y a los restantes empleados públicos."
+        }
+      ],
+      "correct_option_id": "D",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "funcion-publica-y-liderazgo",
+        "trebep"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 57,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 13
+      },
+      "explanation": null,
+      "legal_reference": "Real Decreto Legislativo 5/2015, texto refundido del Estatuto Básico del Empleado Público",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q058",
+      "statement": "El artículo 61.6 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el Texto Refundido de la Ley del Estatuto Básico del Empleado Público, dispone que los sistemas selectivos de funcionarios de carrera serán:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Exclusivamente la oposición libre, como garantía del principio de igualdad y mérito en el acceso a la función pública."
+        },
+        {
+          "id": "B",
+          "text": "La oposición, el concurso-oposición o el concurso, pudiendo la Administración elegir libremente entre ellos según sus necesidades."
+        },
+        {
+          "id": "C",
+          "text": "Los de oposición y concurso-oposición. Sólo en virtud de ley podrá aplicarse, con carácter excepcional, el sistema de concurso."
+        },
+        {
+          "id": "D",
+          "text": "La oposición o el concurso-oposición, quedando excluido el concurso como sistema selectivo para el acceso a la condición de funcionario de carrera."
+        }
+      ],
+      "correct_option_id": "C",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "funcion-publica-y-liderazgo",
+        "trebep"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 58,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 13
+      },
+      "explanation": null,
+      "legal_reference": "Real Decreto Legislativo 5/2015, texto refundido del Estatuto Básico del Empleado Público",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q059",
+      "statement": "Según el artículo 89.4 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el Texto Refundido de la Ley del Estatuto Básico del Empleado Público, para atender al cuidado de cada hijo, los funcionarios de carrera tendrán derecho a un período de excedencia de duración no superior a:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Un año."
+        },
+        {
+          "id": "B",
+          "text": "Dos años."
+        },
+        {
+          "id": "C",
+          "text": "Tres años."
+        },
+        {
+          "id": "D",
+          "text": "Cinco años."
+        }
+      ],
+      "correct_option_id": "C",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "funcion-publica-y-liderazgo",
+        "trebep"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 59,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 14
+      },
+      "explanation": null,
+      "legal_reference": "Real Decreto Legislativo 5/2015, texto refundido del Estatuto Básico del Empleado Público",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q060",
+      "statement": "Según el artículo 14 de la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas, los reconocimientos de compatibilidad:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Deberán renovarse anualmente mediante solicitud del interesado ante el órgano competente de su Administración."
+        },
+        {
+          "id": "B",
+          "text": "No podrán modificar la jornada de trabajo y horario del interesado y quedarán automáticamente sin efecto en caso de cambio de puesto en el sector público."
+        },
+        {
+          "id": "C",
+          "text": "Podrán modificar la jornada y el horario del interesado para facilitar el ejercicio de la actividad privada compatibilizada."
+        },
+        {
+          "id": "D",
+          "text": "Tendrán carácter permanente y se mantendrán inalterados con independencia de los cambios de puesto que experimente el interesado en el sector público."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "funcion-publica-y-liderazgo",
+        "ley-53-1984-incompatibilidades"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 60,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 14
+      },
+      "explanation": null,
+      "legal_reference": "Ley 53/1984 de Incompatibilidades",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q061",
+      "statement": "Según el artículo 87.2 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el Texto Refundido de la Ley del Estatuto Básico del Empleado Público, con carácter general, quienes se encuentren en situación de servicios especiales:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Percibirán las retribuciones del puesto o cargo que desempeñen y no las que les correspondan como funcionarios de carrera."
+        },
+        {
+          "id": "B",
+          "text": "Percibirán las retribuciones correspondientes a su puesto de origen, además de las que le correspondan en su nuevo destino."
+        },
+        {
+          "id": "C",
+          "text": "Pierden el derecho a la reserva de su puesto de trabajo si la situación se prolonga más de tres años consecutivos."
+        },
+        {
+          "id": "D",
+          "text": "Pierden temporalmente la condición de funcionario de carrera mientras dure la situación."
+        }
+      ],
+      "correct_option_id": "A",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "funcion-publica-y-liderazgo",
+        "trebep"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 61,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 14
+      },
+      "explanation": null,
+      "legal_reference": "Real Decreto Legislativo 5/2015, texto refundido del Estatuto Básico del Empleado Público",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q062",
+      "statement": "Según el artículo 95.2 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el Texto Refundido de la Ley del Estatuto Básico del Empleado Público, tienen la consideración de faltas muy graves, entre otras:",
+      "options": [
+        {
+          "id": "A",
+          "text": "El abandono del servicio, así como no hacerse cargo voluntariamente de las tareas o funciones que tienen encomendadas."
+        },
+        {
+          "id": "B",
+          "text": "El disfrute de las vacaciones anuales retribuidas de veintidós días hábiles, cuando no se soliciten con la antelación reglamentariamente establecida."
+        },
+        {
+          "id": "C",
+          "text": "El notorio incumplimiento de sus funciones u obligaciones, siempre que de ello se derive un perjuicio leve para la Administración o los ciudadanos."
+        },
+        {
+          "id": "D",
+          "text": "Los errores cometidos en el desempeño de sus funciones cuando no hayan ocasionado perjuicio a la Administración ni a los ciudadanos."
+        }
+      ],
+      "correct_option_id": "A",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "funcion-publica-y-liderazgo",
+        "trebep"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 62,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 14
+      },
+      "explanation": null,
+      "legal_reference": "Real Decreto Legislativo 5/2015, texto refundido del Estatuto Básico del Empleado Público",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q063",
+      "statement": "Las faltas graves de los funcionarios prescriben, según el artículo 97 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el Texto Refundido de la Ley del Estatuto Básico del Empleado Público, a los:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Un año."
+        },
+        {
+          "id": "B",
+          "text": "Dos años."
+        },
+        {
+          "id": "C",
+          "text": "Tres años."
+        },
+        {
+          "id": "D",
+          "text": "Seis años."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "funcion-publica-y-liderazgo",
+        "trebep"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 63,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 14
+      },
+      "explanation": null,
+      "legal_reference": "Real Decreto Legislativo 5/2015, texto refundido del Estatuto Básico del Empleado Público",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q064",
+      "statement": "Según el artículo 96.1.a) del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el Texto Refundido de la Ley del Estatuto Básico del Empleado Público, la sanción de separación del servicio de los funcionarios:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Constituye una medida cautelar temporal que se adopta durante la tramitación del expediente disciplinario, sin carácter sancionador."
+        },
+        {
+          "id": "B",
+          "text": "Solo podrá imponerse por la comisión de faltas graves, siempre que exista informe favorable de un órgano colegiado con representación sindical."
+        },
+        {
+          "id": "C",
+          "text": "Solo podrá sancionar la comisión de faltas muy graves, y en el caso de los funcionarios interinos comportará la revocación de su nombramiento."
+        },
+        {
+          "id": "D",
+          "text": "Se impone siempre como sanción accesoria conjuntamente con la suspensión firme de funciones superior a seis años."
+        }
+      ],
+      "correct_option_id": "C",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "funcion-publica-y-liderazgo",
+        "trebep"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 64,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 15
+      },
+      "explanation": null,
+      "legal_reference": "Real Decreto Legislativo 5/2015, texto refundido del Estatuto Básico del Empleado Público",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q065",
+      "statement": "La Ley Orgánica 1/2018, de 5 de noviembre, de reforma del Estatuto de Autonomía de Canarias, al reconocer en su artículo 17.1 el derecho a la igualdad entre mujeres y hombres, señala que los poderes públicos canarios garantizarán:",
+      "options": [
+        {
+          "id": "A",
+          "text": "La igualdad efectiva entre mujeres y hombres en el ámbito público y privado, y velarán por la conciliación de la vida familiar y profesional."
+        },
+        {
+          "id": "B",
+          "text": "La igualdad entre mujeres y hombres en todas las esferas política, civil, laboral, económica, social y cultural, exclusivamente en el ámbito público, promoviendo medidas que favorezcan la eliminación de la discriminación de la mujer."
+        },
+        {
+          "id": "C",
+          "text": "La dignidad de la mujer, el reconocimiento a su identidad de género y a la no discriminación por su orientación sexual, así como el acceso en condiciones de igualdad a los servicios y prestaciones de carácter público o privado."
+        },
+        {
+          "id": "D",
+          "text": "Ninguna de las anteriores es correcta."
+        }
+      ],
+      "correct_option_id": "A",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "igualdad-y-empleo",
+        "estatuto-autonomia-canarias"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 65,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 15
+      },
+      "explanation": null,
+      "legal_reference": "Ley Orgánica 1/2018, de reforma del Estatuto de Autonomía de Canarias",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q066",
+      "statement": "Según el artículo 14 de La Ley Orgánica 3/2007, para la igualdad efectiva de mujeres y hombres, en relación a los criterios generales de actuación de los Poderes Públicos, señale la afirmación correcta:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Avalar la efectividad de las relaciones personales entre empleados públicos."
+        },
+        {
+          "id": "B",
+          "text": "Asegurar la participación mayoritaria de mujeres en las candidaturas electorales y en la toma de decisiones."
+        },
+        {
+          "id": "C",
+          "text": "Colaborar y cooperar entre las distintas Administraciones públicas en la aplicación del principio de igualdad de trato y de oportunidades."
+        },
+        {
+          "id": "D",
+          "text": "Fomentar la implantación de un lenguaje coloquial."
+        }
+      ],
+      "correct_option_id": "C",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "igualdad-y-empleo",
+        "lo-3-2007-igualdad"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 66,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 15
+      },
+      "explanation": null,
+      "legal_reference": "Ley Orgánica 3/2007 para la igualdad efectiva de mujeres y hombres",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q067",
+      "statement": "De conformidad con el artículo 6.1 de la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, ¿cuál es la definición de la discriminación directa por razón de sexo?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cualquier comportamiento, verbal o físico, orden, criterio o práctica de naturaleza sexual o realizado en función del sexo de una persona, con el propósito o el efecto de atentar contra su dignidad y de crear un entorno intimidatorio, degradante u ofensivo."
+        },
+        {
+          "id": "B",
+          "text": "La situación en que una disposición, criterio o práctica aparentemente neutros pone a personas de un sexo en desventaja particular con respecto a personas del otro."
+        },
+        {
+          "id": "C",
+          "text": "La situación en que se encuentra una persona que sea, haya sido o pudiera ser tratada, en atención a su sexo, de manera menos favorable que otra en situación comparable."
+        },
+        {
+          "id": "D",
+          "text": "La situación en que se encuentra una persona que sea, haya sido o pudiera ser tratada, en atención a su religión, de manera menos favorable que otra en situación comparable."
+        }
+      ],
+      "correct_option_id": "C",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "igualdad-y-empleo",
+        "lo-3-2007-igualdad"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 67,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 15
+      },
+      "explanation": null,
+      "legal_reference": "Ley Orgánica 3/2007 para la igualdad efectiva de mujeres y hombres",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q068",
+      "statement": "Según el artículo 5 de la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, el principio de igualdad de trato y de oportunidades entre mujeres y hombres se garantizará en:",
+      "options": [
+        {
+          "id": "A",
+          "text": "El acceso al empleo, la formación profesional, la promoción profesional, entre otros."
+        },
+        {
+          "id": "B",
+          "text": "Las condiciones de trabajo, sin incluir las retributivas y las de despido."
+        },
+        {
+          "id": "C",
+          "text": "Las actividades religiosas y de culto, cuando no exista relación laboral."
+        },
+        {
+          "id": "D",
+          "text": "Solo para la creación de organizaciones sindicales y mercantiles."
+        }
+      ],
+      "correct_option_id": "A",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "igualdad-y-empleo",
+        "lo-3-2007-igualdad"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 68,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 16
+      },
+      "explanation": null,
+      "legal_reference": "Ley Orgánica 3/2007 para la igualdad efectiva de mujeres y hombres",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q069",
+      "statement": "Según el artículo 45 de la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, en la elaboración y aplicación de los planes de igualdad, las empresas están obligadas a:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Facilitar la promoción interna de los hombres."
+        },
+        {
+          "id": "B",
+          "text": "Mejorar la productividad."
+        },
+        {
+          "id": "C",
+          "text": "Regular los salarios en función del rendimiento."
+        },
+        {
+          "id": "D",
+          "text": "Respetar la igualdad de trato y de oportunidades en el ámbito laboral."
+        }
+      ],
+      "correct_option_id": "D",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "igualdad-y-empleo",
+        "lo-3-2007-igualdad"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 69,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 16
+      },
+      "explanation": null,
+      "legal_reference": "Ley Orgánica 3/2007 para la igualdad efectiva de mujeres y hombres",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q070",
+      "statement": "Según el artículo 8 de la Ley 38/2003 de 17 de noviembre General de Subvenciones, ¿cuál de los siguientes principios NO está incluido en la gestión de las subvenciones?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Discrecionalidad."
+        },
+        {
+          "id": "B",
+          "text": "Eficiencia."
+        },
+        {
+          "id": "C",
+          "text": "Igualdad."
+        },
+        {
+          "id": "D",
+          "text": "Publicidad."
+        }
+      ],
+      "correct_option_id": "A",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "presupuestos-y-subvenciones",
+        "ley-38-2003-subvenciones"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 70,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 16
+      },
+      "explanation": null,
+      "legal_reference": "Ley 38/2003 General de Subvenciones",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q071",
+      "statement": "Según el artículo 20 de la Ley 38/2003, de 17 de noviembre, General de Subvenciones, ¿qué órgano es el responsable de administrar y custodiar la Base de Datos Nacional de Subvenciones?",
+      "options": [
+        {
+          "id": "A",
+          "text": "El Consejo de Ministros."
+        },
+        {
+          "id": "B",
+          "text": "El Tribunal de Cuentas."
+        },
+        {
+          "id": "C",
+          "text": "La Agencia Tributaria."
+        },
+        {
+          "id": "D",
+          "text": "La Intervención General de la Administración del Estado."
+        }
+      ],
+      "correct_option_id": "D",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "presupuestos-y-subvenciones",
+        "ley-38-2003-subvenciones"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 71,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 16
+      },
+      "explanation": null,
+      "legal_reference": "Ley 38/2003 General de Subvenciones",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q072",
+      "statement": "De conformidad con lo establecido en el artículo 2 de la Ley 38/2003, de 17 de noviembre, General de Subvenciones, ¿qué se entiende por subvención?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cualquier ayuda económica sin necesidad de justificación."
+        },
+        {
+          "id": "B",
+          "text": "Una disposición dineraria."
+        },
+        {
+          "id": "C",
+          "text": "Un préstamo a devolver en un plazo determinado."
+        },
+        {
+          "id": "D",
+          "text": "Una donación a organizaciones sin ánimo de lucro."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "presupuestos-y-subvenciones",
+        "ley-38-2003-subvenciones"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 72,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 16
+      },
+      "explanation": null,
+      "legal_reference": "Ley 38/2003 General de Subvenciones",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q073",
+      "statement": "Según el artículo 9 de la Ley 38/2003, General de Subvenciones, las bases reguladoras de cada tipo de subvención se publicarán:",
+      "options": [
+        {
+          "id": "A",
+          "text": "En el Boletín Oficial del Estado o en el diario oficial correspondiente."
+        },
+        {
+          "id": "B",
+          "text": "Exclusivamente en el Boletín Oficial del Estado."
+        },
+        {
+          "id": "C",
+          "text": "En el Boletín Oficial del Estado y en dos periódicos de gran difusión en el territorio correspondiente."
+        },
+        {
+          "id": "D",
+          "text": "Sólo en el diario oficial correspondiente."
+        }
+      ],
+      "correct_option_id": "A",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "presupuestos-y-subvenciones",
+        "ley-38-2003-subvenciones"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 73,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 16
+      },
+      "explanation": null,
+      "legal_reference": "Ley 38/2003 General de Subvenciones",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q074",
+      "statement": "Según el artículo 80.1 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, en relación a la emisión de informes, estos serán:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Un dictamen emitido exclusivamente por órganos colegiados."
+        },
+        {
+          "id": "B",
+          "text": "Obligatorios y vinculantes."
+        },
+        {
+          "id": "C",
+          "text": "Salvo disposición expresa en contrario, los informes serán facultativos y no vinculantes."
+        },
+        {
+          "id": "D",
+          "text": "Un documento interno de la Administración sin valor jurídico."
+        }
+      ],
+      "correct_option_id": "C",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "instruccion-y-resolucion",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 74,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 16
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q075",
+      "statement": "Según el artículo 79.1 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, respecto a la diferencia entre informes preceptivos y facultativos:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ambos tipos de informes son obligatorios, la diferencia radica en su plazo de emisión."
+        },
+        {
+          "id": "B",
+          "text": "Los informes preceptivos son aquellos que se solicitan por ser exigidos por las disposiciones legales, mientras que los facultativos son los que se juzguen necesarios para resolver, sin venir impuestos por norma alguna."
+        },
+        {
+          "id": "C",
+          "text": "El informe facultativo se solicita de oficio y el preceptivo a instancia de parte."
+        },
+        {
+          "id": "D",
+          "text": "El informe preceptivo se emite solo si lo decide el interesado, mientras que el facultativo lo decide el órgano instructor."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "instruccion-y-resolucion",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 75,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 17
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q076",
+      "statement": "De acuerdo con el artículo 86 de la Ley 33/2003 de Patrimonio de las Administraciones Públicas, el aprovechamiento especial de los bienes de dominio público, cuando la ocupación se efectúe únicamente con instalaciones desmontables o bienes muebles, si la duración del aprovechamiento o uso excede de cuatro años, estará sujeto a:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Autorización administrativa."
+        },
+        {
+          "id": "B",
+          "text": "Concesión administrativa."
+        },
+        {
+          "id": "C",
+          "text": "Contrato de servicios."
+        },
+        {
+          "id": "D",
+          "text": "Podrá aprovecharse libremente sin requerir autorización administrativa."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "patrimonio-publico",
+        "ley-33-2003-patrimonio"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 76,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 17
+      },
+      "explanation": null,
+      "legal_reference": "Ley 33/2003 del Patrimonio de las Administraciones Públicas",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q077",
+      "statement": "Según el artículo 41.1 de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, cualquier acto o actuación realizada íntegramente a través de medios electrónicos por una Administración Pública en el marco de un procedimiento administrativo y en la que no haya intervenido de forma directa un empleado público, se denomina:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Actuación administrativa automatizada."
+        },
+        {
+          "id": "B",
+          "text": "Actuación electrónica de comunicación administrativa."
+        },
+        {
+          "id": "C",
+          "text": "Código seguro de verificación vinculado a la administración pública."
+        },
+        {
+          "id": "D",
+          "text": "Documento electrónico verificable."
+        }
+      ],
+      "correct_option_id": "A",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "administracion-publica-digital",
+        "ley-40-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 77,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 17
+      },
+      "explanation": null,
+      "legal_reference": "Ley 40/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q078",
+      "statement": "Según el artículo 80 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, si un informe preceptivo no se emite en el plazo señalado:",
+      "options": [
+        {
+          "id": "A",
+          "text": "El órgano competente para resolver deberá abstenerse de dictar resolución hasta que el informe se emita, sin que quepa en ningún caso suspender ni proseguir el plazo máximo del procedimiento."
+        },
+        {
+          "id": "B",
+          "text": "El procedimiento quedará automáticamente caducado, debiendo la Administración iniciar un nuevo procedimiento una vez recibido el informe."
+        },
+        {
+          "id": "C",
+          "text": "Se entenderá emitido en sentido favorable por aplicación del silencio administrativo, pudiendo continuarse la tramitación sin necesidad de reclamarlo nuevamente."
+        },
+        {
+          "id": "D",
+          "text": "Sin perjuicio de la responsabilidad en que incurra el responsable de la demora, se podrá suspender el transcurso del plazo máximo legal para resolver el procedimiento."
+        }
+      ],
+      "correct_option_id": "D",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "instruccion-y-resolucion",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 78,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 17
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q079",
+      "statement": "Según el artículo 70.4 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿qué valor tienen los informes internos o entre órganos o entidades administrativas?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Forman parte del expediente administrativo en todo caso."
+        },
+        {
+          "id": "B",
+          "text": "No forman parte del expediente administrativo."
+        },
+        {
+          "id": "C",
+          "text": "Sustituyen a los informes preceptivos exigidos por la normativa."
+        },
+        {
+          "id": "D",
+          "text": "Tienen carácter vinculante para la resolución del procedimiento."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "instruccion-y-resolucion",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 79,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 17
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-q080",
+      "statement": "Según el artículo 22 de la Ley 38/2003, de 17 de noviembre, General de Subvenciones, el procedimiento ordinario de concesión de subvenciones:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Se tramitará en régimen de concurrencia competitiva, mediante la comparación de las solicitudes presentadas para establecer una prelación entre ellas conforme a los criterios de valoración fijados en las bases reguladoras y la convocatoria, sin perjuicio de que en los supuestos tasados por la ley puedan concederse subvenciones de forma directa."
+        },
+        {
+          "id": "B",
+          "text": "Se tramitará en régimen de concurrencia competitiva, correspondiendo la propuesta de concesión directamente al órgano concedente, sin intervención de ningún órgano colegiado."
+        },
+        {
+          "id": "C",
+          "text": "Se tramitará en régimen de concurrencia competitiva, pudiendo el órgano concedente conceder la subvención a cualquier solicitante, con independencia de la puntuación obtenida."
+        },
+        {
+          "id": "D",
+          "text": "Se tramitará siempre mediante concesión directa, sin comparación entre solicitudes."
+        }
+      ],
+      "correct_option_id": "A",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-ordinario",
+        "presupuestos-y-subvenciones",
+        "ley-38-2003-subvenciones"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 80,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": false,
+        "page": 18
+      },
+      "explanation": null,
+      "legal_reference": "Ley 38/2003 General de Subvenciones",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-r001",
+      "statement": "Según el artículo 4.1.a) de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, ¿Quiénes se consideran interesados en el procedimiento administrativo?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Las personas que colaboren como testigos o peritos en la tramitación del expediente."
+        },
+        {
+          "id": "B",
+          "text": "Los órganos administrativos que tengan atribuida la competencia para resolver el procedimiento."
+        },
+        {
+          "id": "C",
+          "text": "Los organismos que emitan informes relacionados con la instrucción del procedimiento."
+        },
+        {
+          "id": "D",
+          "text": "Quienes lo promuevan como titulares de derechos o intereses legítimos individuales o colectivos."
+        }
+      ],
+      "correct_option_id": "D",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-reserva",
+        "interesados-y-representacion",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 1,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": true,
+        "page": 18
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-r002",
+      "statement": "Conforme al artículo 52.1 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, la Administración podrá convalidar:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cualquier acto administrativo, con independencia del vicio que presente."
+        },
+        {
+          "id": "B",
+          "text": "Los actos nulos de pleno derecho."
+        },
+        {
+          "id": "C",
+          "text": "Los actos anulables, subsanando los vicios de que adolezcan."
+        },
+        {
+          "id": "D",
+          "text": "Los actos inexistentes."
+        }
+      ],
+      "correct_option_id": "C",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-reserva",
+        "actos-administrativos",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 2,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": true,
+        "page": 18
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-r003",
+      "statement": "Según el artículo 40.2 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, las notificaciones administrativas deberán contener necesariamente:",
+      "options": [
+        {
+          "id": "A",
+          "text": "La propuesta de resolución inicial del procedimiento."
+        },
+        {
+          "id": "B",
+          "text": "El informe jurídico emitido durante la tramitación."
+        },
+        {
+          "id": "C",
+          "text": "El texto íntegro de la resolución, indicando si pone fin o no a la vía administrativa y los recursos que procedan."
+        },
+        {
+          "id": "D",
+          "text": "Las alegaciones presentadas por los interesados durante el procedimiento."
+        }
+      ],
+      "correct_option_id": "C",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-reserva",
+        "notificaciones-y-registro",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 3,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": true,
+        "page": 18
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-r004",
+      "statement": "Según el artículo 120.1 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas cuando deban resolverse una pluralidad de recursos administrativos que traigan causa de un mismo acto administrativo y se hubiera interpuesto un recurso judicial contra una resolución administrativa o bien contra el correspondiente acto presunto desestimatorio, el órgano administrativo podrá:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Acordar la suspensión del plazo para resolver hasta que recaiga pronunciamiento judicial."
+        },
+        {
+          "id": "B",
+          "text": "Archivar los recursos administrativos suspendidos sin notificarlo a los interesados."
+        },
+        {
+          "id": "C",
+          "text": "Declarar caducados los recursos administrativos pendientes."
+        },
+        {
+          "id": "D",
+          "text": "Resolver todos los recursos administrativos sin esperar al pronunciamiento judicial."
+        }
+      ],
+      "correct_option_id": "A",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-reserva",
+        "recursos-administrativos",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 4,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": true,
+        "page": 18
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-r005",
+      "statement": "Los convenios celebrados entre Administraciones Públicas, según el artículo 51.1 de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, se extinguen por:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Acuerdo unilateral de cualquiera de las partes, sin necesidad de justificación, en cualquier momento de su vigencia."
+        },
+        {
+          "id": "B",
+          "text": "Cumplimiento de las actuaciones que constituyen su objeto o por incurrir en causa de resolución."
+        },
+        {
+          "id": "C",
+          "text": "Ejecución del presupuesto pactado, sin posibilidad de resolución anticipada por ninguna de las partes."
+        },
+        {
+          "id": "D",
+          "text": "Sentencia judicial firme que declare la nulidad, siendo la única causa de extinción anticipada reconocida por la ley."
+        }
+      ],
+      "correct_option_id": "B",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-reserva",
+        "organizacion-administrativa",
+        "ley-40-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 5,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": true,
+        "page": 19
+      },
+      "explanation": null,
+      "legal_reference": "Ley 40/2015",
+      "notes": null,
+      "is_annulled": false
+    },
+    {
+      "id": "gobcan-a2-tinl26-r006",
+      "statement": "Según el artículo 75.4 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, respecto a los actos de instrucción del procedimiento administrativo:",
+      "options": [
+        {
+          "id": "A",
+          "text": "El órgano al que corresponda la resolución del procedimiento adoptará las medidas necesarias para lograr el pleno respeto a los principios de contradicción y publicidad."
+        },
+        {
+          "id": "B",
+          "text": "El órgano al que corresponda la resolución del procedimiento adoptará las medidas necesarias para lograr el pleno respeto a los principios de veracidad e igualdad."
+        },
+        {
+          "id": "C",
+          "text": "El órgano instructor del procedimiento adoptará las medidas necesarias para lograr el pleno respeto a los principios de contradicción y publicidad."
+        },
+        {
+          "id": "D",
+          "text": "El órgano instructor del procedimiento adoptará las medidas necesarias para lograr el pleno respeto a los principios de contradicción e igualdad."
+        }
+      ],
+      "correct_option_id": "D",
+      "topic_ids": [
+        "gobcan-a2-tinl26",
+        "gobcan-a2-tinl26-reserva",
+        "instruccion-y-resolucion",
+        "ley-39-2015"
+      ],
+      "source": {
+        "organization": "Gobierno de Canarias - Dirección General de la Función Pública",
+        "exam_name": "Cuerpo Facultativo Técnico de Grado Medio, especialidad de Tecnologías de la Información (A2TINL26)",
+        "year": 2026,
+        "exercise": "Primer ejercicio tipo test",
+        "question_number": 6,
+        "document": "resoluc_publica_respues_test_1_ejercic_A2TINL26_26072026.pdf",
+        "is_reserve": true,
+        "page": 19
+      },
+      "explanation": null,
+      "legal_reference": "Ley 39/2015",
+      "notes": null,
+      "is_annulled": false
+    }
+  ]
+}
