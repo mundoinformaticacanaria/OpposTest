@@ -68,6 +68,19 @@
 .data-file-slot { display: none; }
 .data-choice-button { width: 100%; margin-top: auto; }
 
+.public-banks-note {
+  margin: 1rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  text-align: center;
+}
+
+.public-banks-note a {
+  color: var(--primary);
+  font-weight: 750;
+}
+
 @media (max-width: 620px) {
   .data-dialog {
     width: min(100% - 1rem, 520px);

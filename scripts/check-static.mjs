@@ -1,10 +1,18 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
+const publicBanks = [
+  'banks/gobcan-a1-ti-l26-2026.json',
+  'banks/gobcan-a2-tinl26-2026.json',
+  'banks/scs-a1-informatica-estabilizacion-2022.json',
+  'banks/scs-ttm-informatica-estabilizacion-2022.json'
+];
+
 const requiredFiles = [
   'index.html',
   'styles.css',
   'styles/export-dialog.css',
+  'styles/footer.css',
   'manifest.webmanifest',
   'service-worker.js',
   'src/app.js',
@@ -15,6 +23,8 @@ const requiredFiles = [
   'src/data/repository.js',
   'src/ui/export-data.js',
   'samples/demo-bank.json',
+  'banks/README.md',
+  ...publicBanks,
   'assets/icons/icon-192.png',
   'assets/icons/icon-512.png'
 ];
@@ -28,4 +38,14 @@ if (missing.length) {
 JSON.parse(readFileSync('manifest.webmanifest', 'utf8'));
 JSON.parse(readFileSync('samples/demo-bank.json', 'utf8'));
 JSON.parse(readFileSync('bank.schema.json', 'utf8'));
-console.log('Estructura estática y archivos JSON válidos.');
+for (const filename of publicBanks) JSON.parse(readFileSync(filename, 'utf8'));
+
+const index = readFileSync('index.html', 'utf8');
+for (const expected of ['OpposTest v1.0.0', 'Xerach Hernández Quesada', 'linkedin.com/in/xerach-hernandez-quesada', '/OpposTest/tree/main/banks']) {
+  if (!index.includes(expected)) {
+    console.error(`Falta en index.html: ${expected}`);
+    process.exit(1);
+  }
+}
+
+console.log('Estructura estática, autoría y archivos JSON válidos.');

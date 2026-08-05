@@ -11,13 +11,8 @@
   font-size: .9rem;
 }
 
-.app-footer p {
-  margin: 0;
-}
-
-.app-footer strong {
-  color: var(--text);
-}
+.app-footer p { margin: 0; }
+.app-footer strong { color: var(--text); }
 
 .footer-links {
   display: flex;
@@ -31,7 +26,8 @@
   text-decoration: none;
 }
 
-.footer-links a:hover {
+.footer-links a:hover,
+.footer-links a:focus-visible {
   text-decoration: underline;
 }
 
