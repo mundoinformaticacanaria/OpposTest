@@ -31,6 +31,13 @@ jobs:
           for index in $(seq -w 0 13); do
             git show FETCH_HEAD:.bank-source-v3/chunk-$index > /tmp/oppostest-bank-source/chunk-$index
           done
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib
+          for chunk in sorted(Path('/tmp/oppostest-bank-source').glob('chunk-*')):
+              content = chunk.read_text(encoding='utf-8').strip()
+              print(chunk.name, len(content), hashlib.sha256(content.encode()).hexdigest())
+          PY
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
